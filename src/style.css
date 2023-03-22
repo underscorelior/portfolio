@@ -1,0 +1,41 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities; 
+ 
+@layer base { 
+	/* for elements */ 
+	.body {
+		@apply font-poppins bg-neutral-200 min-h-screen min-w-full flex items-center;
+	}
+
+	.blobs {
+		@apply absolute w-72 h-72 rounded-full filter blur-xl opacity-70 animate-blob;
+	}
+
+	.nav {
+		@apply sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 w-full py-4 border-b border-neutral-200/20;
+	}
+} 
+ 
+@layer components { 
+	/* for classes */ 
+} 
+ 
+@layer utilities { 
+	/* for text gradients, usage "text-gradient from-[color] to-[color]" */ 
+	.text-gradient { 
+		@apply inline-block bg-clip-text text-transparent; 
+	} 
+ 
+	/* vertical and horizontal centering */ 
+	.VHcenter { 
+		@apply items-center justify-center; 
+	} 
+
+	.animation-delay-2000 {
+		animation-delay: 2s;
+	}
+	.animation-delay-4000 {
+		animation-delay: 4s;
+	}
+} 
