@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import "./style.css";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-import Test from "./components/Test";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 
