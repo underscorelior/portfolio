@@ -16,33 +16,8 @@ function App() {
             </Route>
         </Routes>
         
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
-        <h1 className="p-10">a</h1>
+        <h1 className="pt-96 mt-96">a</h1>
+
     </div>
   );
 }

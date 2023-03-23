@@ -9,7 +9,7 @@
 	}
 
 	.blobs {
-		@apply absolute w-72 h-72 rounded-full filter blur-xl opacity-70 animate-blob;
+		@apply absolute w-96 h-96 rounded-full filter blur-xl opacity-70 animate-blob;
 	}
 
 	.nav {
