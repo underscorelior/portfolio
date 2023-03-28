@@ -16,7 +16,7 @@ function App() {
             </Route>
         </Routes>
         
-        <h1 className="pt-96 mt-96">a</h1>
+        <h1 className="py-96 my-96">a</h1>
 
     </div>
   );
