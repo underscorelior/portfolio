@@ -41,11 +41,11 @@
 	}
 	
 	.mobile-navbar {
-		@apply w-full h-screen fixed top-0 left-0 z-40 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 flex flex-col items-center justify-center;
+		@apply w-full h-screen fixed top-0 left-0 z-40 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 flex flex-col items-center justify-center md:hidden;
 	}
 
 	.mobile-nav-btn {
-		@apply w-10 h-10 rounded-full bg-neutral-300 cursor-pointer z-50 items-center flex justify-center
+		@apply w-10 h-10 rounded-full bg-neutral-300 cursor-pointer z-50 items-center flex justify-center;
 	}
 } 
 

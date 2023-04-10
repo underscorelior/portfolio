@@ -12,8 +12,6 @@ class BlobHeader extends Component {
         <div className='relative flex justify-center'>
           <div className='rounded-lg flex justify-center mt-10 md:mt-20 md:w-[81%] flex-col'>
             <h1 className='header-subtitle'>
-              {/* <span className='header-title'>{header.title}</span> */}
-              {/* <br /> */}
               {header.subtitle}
             </h1>
             <div className='mt-8 md:mt-8'>

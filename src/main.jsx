@@ -17,8 +17,7 @@ function App() {
                 <Route index element={<Home />} />
             </Route>
         </Routes>
-        <h1 className="py-96 my-96">a</h1>
-
+        <h1 className="py-96 my-96">a</h1> {/* This is just to test navbar and scrolling */}
     </div>
   );
 }

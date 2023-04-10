@@ -29,9 +29,12 @@ const Navbar = () => {
 
   return (
     <>
-      <button className='mobile-nav-btn' onClick={() => setToggle(!isToggled)}>
-        {isToggled ? <GrClose /> : <GiHamburgerMenu />}
-      </button>
+      <nav>
+        <h1>Lior</h1>
+        <button className='mobile-nav-btn' onClick={() => setToggle(!isToggled)}>
+          {isToggled ? <GrClose /> : <GiHamburgerMenu />}
+        </button>
+      </nav>
       <AnimatePresence>
         {isToggled && (
           <motion.nav
