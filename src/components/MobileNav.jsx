@@ -7,6 +7,16 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [isToggled, setToggle] = useState(false);
 
+  function toggleNav() {
+    setToggle(!isToggled);
+      if(!isToggled){
+        document.body.style.overflow = 'hidden';
+      }   
+      else { 
+        document.body.style.overflow = 'unset';
+      }
+  }
+
   const navContainer = {
     visible: {
       //x: 0,
@@ -29,16 +39,16 @@ const Navbar = () => {
 
   return (
     <>
-      <nav>
-        <h1>Lior</h1>
-        <button className='mobile-nav-btn' onClick={() => setToggle(!isToggled)}>
+      <nav className="mobile-navbar">
+        <h1 className="mobile-navbar-name">Lior</h1>
+        <button className='mobile-nav-btn' onClick={() => toggleNav()}>
           {isToggled ? <GrClose /> : <GiHamburgerMenu />}
         </button>
       </nav>
       <AnimatePresence>
         {isToggled && (
           <motion.nav
-            className='mobile-navbar'
+            className='mobile-navbar-menu'
             initial='hidden'
             animate={isToggled ? "visible" : "hidden"}
             exit='hidden'
