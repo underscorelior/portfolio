@@ -41,19 +41,23 @@
 	}
 	
 	.mobile-navbar {
-		@apply flex md:hidden z-50 flex-row items-center justify-between px-[5%] min-w-full mt-2 border-b-2 border-neutral-200/20;
+		@apply sticky top-0 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 w-full rounded-lg flex flex-row items-center justify-between md:hidden z-50 px-[5%] py-[0.375rem] min-w-full border-b border-neutral-300/20;
 	}
-
+	
 	.mobile-navbar-name {
-		@apply text-[2rem] font-medium text-neutral-900;
+		@apply text-[2.125rem] font-medium text-neutral-900;
 	}
 
 	.mobile-navbar-menu {
-		@apply w-full h-max  fixed top-0 left-0 z-40 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 flex flex-col items-center justify-center md:hidden;
+		@apply w-full h-full fixed top-0 z-40 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 flex flex-col items-center justify-center md:hidden;
 	}
 
 	.mobile-nav-btn {
-		@apply w-10 h-10 rounded-full bg-neutral-300 cursor-pointer z-50 items-center flex justify-center;
+		@apply w-12 h-12 rounded-full bg-neutral-200/30 cursor-pointer z-50 items-center flex justify-center;
+	}
+
+	.nav-item {
+		@apply text-2xl list-none text-neutral-900 font-medium cursor-pointer;
 	}
 } 
 
@@ -85,16 +89,8 @@
 
 
 
-.navList {
-  padding: 100px 70px 200px 70px;
-}
 
-.nav-item {
-  font-size: 20px;
-  list-style: none;
-  color: white;
-  cursor: pointer;
-}
+
 
 h4 {
   margin-block-start: 1px;
