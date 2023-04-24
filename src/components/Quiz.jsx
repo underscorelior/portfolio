@@ -73,6 +73,9 @@ class Quiz extends Component {
 			});
 		} catch (error) {
 			console.error(error);
+			toast.error(
+				'Could not load countries. Please check your internet connection.'
+			);
 		}
 	};
 
@@ -104,27 +107,27 @@ class Quiz extends Component {
 							onClick={this.handleOptionSelect}
 						/>
 					))}
-					{!isChecked ? (
-						<button
-							className={
-								isDisabled
-									? 'quiz-button-check-disabled'
-									: 'quiz-button-check'
-							}
-							onClick={this.handleAnswerCheck}
-							disabled={isChecked || isDisabled}
-						>
-							Check Answer
-						</button>
-					) : (
-						<button
-							className='quiz-button-next'
-							onClick={this.generateNextQuestion}
-						>
-							Next Question
-						</button>
-					)}
 				</div>
+				{!isChecked ? (
+					<button
+						className={
+							isDisabled
+								? 'quiz-button-check-disabled'
+								: 'quiz-button-check'
+						}
+						onClick={this.handleAnswerCheck}
+						disabled={isChecked || isDisabled}
+					>
+						Check Answer
+					</button>
+				) : (
+					<button
+						className='quiz-button-next quiz-button'
+						onClick={this.generateNextQuestion}
+					>
+						Next Question
+					</button>
+				)}
 			</div>
 		);
 	}

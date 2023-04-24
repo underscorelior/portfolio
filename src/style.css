@@ -53,7 +53,7 @@
 	}
 
 	.mobile-nav-btn {
-		@apply w-12 h-12 rounded-full bg-neutral-200/30 cursor-pointer z-50 items-center flex justify-center;
+		@apply w-12 h-12 rounded-full cursor-pointer z-50 items-center flex justify-center;
 	}
 
 	.nav-item {
@@ -61,19 +61,23 @@
 	}
 
 	.quiz-button {
-		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 hover:bg-neutral-400 active:bg-neutral-500 bg-neutral-300 text-center;
+		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 text-center;
 	}
 
 	.quiz-button-check-disabled {
-		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 bg-neutral-400 cursor-not-allowed focus:outline-none mt-3 text-center;
+		@apply bg-neutral-400 cursor-not-allowed focus:outline-none mt-3 quiz-button;
 	}
 
 	.quiz-button-check {
-		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 hover:bg-neutral-400 active:bg-neutral-500 bg-neutral-400 mt-3 text-center;
+		@apply hover:bg-neutral-400 active:bg-neutral-500 bg-neutral-400 mt-3  quiz-button;
 	}
 
 	.quiz-button-next {
-		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 hover:bg-neutral-400 active:bg-neutral-500 bg-stone-400 mt-3 text-center;
+		@apply hover:bg-neutral-500/90 active:bg-neutral-400 bg-stone-300 mt-3;
+	}
+
+	.quiz-button-generic {
+		@apply hover:bg-neutral-400 active:bg-neutral-500 bg-neutral-300;
 	}
 
 	.quiz-button-selected {
@@ -81,15 +85,15 @@
 	}
 
 	.quiz-button-correct {
-		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 bg-green-400 cursor-not-allowed focus:outline-none text-center;
+		@apply bg-green-400 cursor-not-allowed focus:outline-none hover:bg-green-400 active:bg-green-400;
 	}
 
 	.quiz-button-wrong {
-		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 bg-red-400 cursor-not-allowed focus:outline-none text-center;
+		@apply bg-red-400 cursor-not-allowed focus:outline-none hover:bg-red-400 active:bg-red-400;
 	}
 
 	.quiz-button-disabled {
-		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 bg-neutral-300 cursor-not-allowed focus:outline-none text-center;
+		@apply bg-neutral-300 cursor-not-allowed focus:outline-none hover:bg-neutral-300 active:bg-neutral-300;
 	}
 }
 
