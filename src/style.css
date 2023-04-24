@@ -1,9 +1,9 @@
-@tailwind base; 
-@tailwind components; 
-@tailwind utilities; 
- 
-@layer base { 
-	/* for elements */ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* for elements */
 	.body {
 		@apply font-poppins bg-neutral-50 min-h-screen min-w-full max-w-full flex items-center;
 	}
@@ -25,7 +25,7 @@
 	}
 
 	.navbar {
-		@apply sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 w-full py-4 border-b border-neutral-200/20 hidden md:flex justify-between; 
+		@apply sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 w-full py-4 border-b border-neutral-200/20 hidden md:flex justify-between;
 	}
 
 	.header-subtitle {
@@ -37,13 +37,13 @@
 	}
 
 	.header-description {
-		@apply text-xl md:text-5xl font-normal text-neutral-700
+		@apply text-xl md:text-5xl font-normal text-neutral-700;
 	}
-	
+
 	.mobile-navbar {
 		@apply sticky top-0 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 w-full rounded-lg flex flex-row items-center justify-between md:hidden z-50 px-[5%] py-[0.375rem] min-w-full border-b border-neutral-300/20;
 	}
-	
+
 	.mobile-navbar-name {
 		@apply text-[2.125rem] font-medium text-neutral-900;
 	}
@@ -59,22 +59,54 @@
 	.nav-item {
 		@apply text-2xl list-none text-neutral-900 font-medium cursor-pointer;
 	}
-} 
 
-@layer components { 
-	/* for classes */ 
-} 
- 
-@layer utilities { 
-	/* for text gradients, usage "text-gradient from-[color] to-[color]" */ 
-	.text-gradient { 
-		@apply inline-block bg-clip-text text-transparent; 
-	} 
- 
-	/* vertical and horizontal centering */ 
-	.VHcenter { 
-		@apply items-center justify-center; 
-	} 
+	.quiz-button {
+		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 hover:bg-neutral-400 active:bg-neutral-500 bg-neutral-300 text-center;
+	}
+
+	.quiz-button-check-disabled {
+		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 bg-neutral-400 cursor-not-allowed focus:outline-none mt-3 text-center;
+	}
+
+	.quiz-button-check {
+		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 hover:bg-neutral-400 active:bg-neutral-500 bg-neutral-400 mt-3 text-center;
+	}
+
+	.quiz-button-next {
+		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 hover:bg-neutral-400 active:bg-neutral-500 bg-stone-400 mt-3 text-center;
+	}
+
+	.quiz-button-selected {
+		@apply hover:bg-slate-500 active:bg-slate-400 bg-slate-400;
+	}
+
+	.quiz-button-correct {
+		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 bg-green-400 cursor-not-allowed focus:outline-none text-center;
+	}
+
+	.quiz-button-wrong {
+		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 bg-red-400 cursor-not-allowed focus:outline-none text-center;
+	}
+
+	.quiz-button-disabled {
+		@apply py-4 px-12 rounded-xl border-2 border-neutral-700 bg-neutral-300 cursor-not-allowed focus:outline-none text-center;
+	}
+}
+
+@layer components {
+	/* for classes */
+}
+
+@layer utilities {
+	/* for text gradients, usage "text-gradient from-[color] to-[color]" */
+	.text-gradient {
+		@apply inline-block bg-clip-text text-transparent;
+	}
+
+	/* vertical and horizontal centering */
+	.VHcenter {
+		@apply items-center justify-center;
+	}
 
 	.animation-delay-2000 {
 		animation-delay: 2s;
@@ -82,17 +114,9 @@
 	.animation-delay-4000 {
 		animation-delay: 4s;
 	}
-} 
-
-
-
-
-
-
-
-
+}
 
 h4 {
-  margin-block-start: 1px;
-  margin-block-end: 1px;
+	margin-block-start: 1px;
+	margin-block-end: 1px;
 }

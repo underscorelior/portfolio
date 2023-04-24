@@ -28,7 +28,7 @@ function App() {
       top: 0,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.35
+        staggerChildren: 0.15
       }
     },
     closed: {
