@@ -88,7 +88,9 @@ class Quiz extends Component {
 			<div className='flex flex-col gap-y-4 mt-12 VHcenter'>
 				<Toaster />
 
-				<h1 className='text-2xl font-semibold mb-3'>{question}</h1>
+				<h1 className='text-2xl font-semibold mb-3 text-center'>
+					{question}
+				</h1>
 				<div className='min-w-[80%] max-w-[80%] flex flex-col gap-y-4'>
 					{options.map((option, index) => (
 						<QuizButton
