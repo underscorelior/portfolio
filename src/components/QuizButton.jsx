@@ -4,14 +4,14 @@ class QuizButton extends Component {
 	render() {
 		const { option, isSelected, isDisabled, isCorrect, onClick } =
 			this.props;
-		let className = 'quiz-button quiz-button-generic';
+		let className = 'quiz-button';
 
 		if (isDisabled) {
 			className += isSelected
 				? isCorrect
 					? ' quiz-button-correct'
 					: ' quiz-button-wrong'
-				: ' quiz-button-disabled';
+				: ' quiz-button-generic';
 		} else if (isSelected) {
 			className += ' quiz-button-selected';
 		}

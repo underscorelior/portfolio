@@ -14,7 +14,7 @@ function App() {
 		<div className='body flex-col justify-between'>
 			<Navbar />
 			<MobileNavbar />
-			<div className='mb-auto'>
+			<div className='mb-auto flex VHcenter w-full'>
 				<Routes>
 					<Route path='/'>
 						<Route

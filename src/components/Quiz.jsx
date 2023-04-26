@@ -88,33 +88,27 @@ class Quiz extends Component {
 		const isDisabled = selectedOption === '';
 
 		return (
-			<div className='flex flex-col gap-y-4 mt-12 VHcenter'>
+			<div className='flex flex-col gap-y-4 mt-12 min-w-[80%] max-w-[80%] md:min-w-[40%] md:max-w-[40%] w-full  VHcenter'>
 				<Toaster />
 
 				<h1 className='text-2xl font-semibold mb-3 text-center'>
 					{question}
 				</h1>
-				<div className='min-w-[80%] max-w-[80%] flex flex-col gap-y-4'>
-					{options.map((option, index) => (
-						<QuizButton
-							key={index}
-							option={option}
-							isSelected={selectedOption === option}
-							isCorrect={
-								(option === this.state.answer) === isChecked
-							}
-							isDisabled={isChecked}
-							onClick={this.handleOptionSelect}
-						/>
-					))}
-				</div>
+				{/* <div className='min-w-[80%] max-w-[80%] flex flex-col gap-y-4'> */}
+				{options.map((option, index) => (
+					<QuizButton
+						key={index}
+						option={option}
+						isSelected={selectedOption === option}
+						isCorrect={(option === this.state.answer) === isChecked}
+						isDisabled={isChecked}
+						onClick={this.handleOptionSelect}
+					/>
+				))}
+				{/* </div> */}
 				{!isChecked ? (
 					<button
-						className={
-							isDisabled
-								? 'quiz-button-check-disabled'
-								: 'quiz-button-check'
-						}
+						className={'quiz-button-check'}
 						onClick={this.handleAnswerCheck}
 						disabled={isChecked || isDisabled}
 					>
@@ -122,7 +116,7 @@ class Quiz extends Component {
 					</button>
 				) : (
 					<button
-						className='quiz-button-next quiz-button'
+						className='quiz-button-next'
 						onClick={this.generateNextQuestion}
 					>
 						Next Question
