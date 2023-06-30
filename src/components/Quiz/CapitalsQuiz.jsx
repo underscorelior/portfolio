@@ -47,6 +47,9 @@ class CapitalsQuiz extends Component {
 			const countries = await response.json();
 			const randomIndex = Math.floor(Math.random() * countries.length);
 			const country = countries[randomIndex];
+			country.capital = Array.isArray(country.capital)
+				? country.capital.join(', ')
+				: country.capital;
 
 			let options = [country.capital];
 
@@ -69,7 +72,6 @@ class CapitalsQuiz extends Component {
 				const j = Math.floor(Math.random() * (i + 1));
 				[options[i], options[j]] = [options[j], options[i]];
 			}
-
 			this.setState({
 				question: `What is the capital of ${country.name}?`,
 				options,
@@ -92,7 +94,6 @@ class CapitalsQuiz extends Component {
 	render() {
 		const { question, options, selectedOption, isChecked } = this.state;
 		const isDisabled = selectedOption === '';
-
 		return (
 			<div className='flex flex-col gap-y-4 min-w-[80%] max-w-[80%] md:min-w-[40%] md:max-w-[40%] w-full  VHcenter'>
 				<h1 className='text-2xl font-semibold mb-3 text-center'>

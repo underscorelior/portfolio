@@ -10,27 +10,25 @@ import Footer from './components/Footer';
 import Quiz from './pages/Quiz';
 
 function App() {
-  return (
-    <div className='body flex-col justify-between'>
-      <Navbar />
-      <MobileNavbar />
-      <div className='mb-auto flex VHcenter w-full'>
-        <Routes>
-          <Route path='/'>
-            <Route index element={<Home />} />
-            <Route path='quiz' element={<Quiz />} />
-          </Route>
-        </Routes>
-      </div>
-      <Footer />
-    </div>
-  );
+	return (
+		<div className='body flex-col justify-between'>
+			<Navbar />
+			<MobileNavbar />
+			<div className='mb-auto flex VHcenter w-full'>
+				<Routes>
+					<Route path='/'>
+						<Route index element={<Home />} />
+						<Route path='quiz' element={<Quiz />} />
+					</Route>
+				</Routes>
+			</div>
+			<Footer />
+		</div>
+	);
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>
 );

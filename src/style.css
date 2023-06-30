@@ -61,7 +61,7 @@
 	}
 
 	.quiz-button {
-		@apply w-full inline-flex h-12 items-center justify-center gap-2 rounded-2xl border border-neutral-500 px-8 text-lg font-medium text-center tracking-wide text-neutral-600 transition duration-300 hover:border-neutral-700 hover:text-neutral-800 focus:border-neutral-800 focus:text-neutral-800 disabled:cursor-not-allowed disabled:border-neutral-400 disabled:text-neutral-500 disabled:shadow-none;
+		@apply w-full inline-flex h-16 items-center justify-center gap-2 rounded-2xl border border-neutral-500 px-8 text-lg font-medium text-center tracking-wide text-neutral-600 transition duration-300 hover:border-neutral-700 hover:text-neutral-800 focus:border-neutral-800 focus:text-neutral-800 disabled:cursor-not-allowed disabled:border-neutral-400 disabled:text-neutral-500 disabled:shadow-none;
 	}
 
 	.quiz-button-check {

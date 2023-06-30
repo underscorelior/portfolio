@@ -100,7 +100,7 @@ class FlagsQuiz extends Component {
 					</h1>
 					<img
 						src={flagUrl}
-						className='w-[320px] h-auto rounded-3xl drop-shadow-2xl p-4'
+						className='w-[320px] h-auto rounded-3xl drop-shadow-2xl p-4 select-none'
 					/>
 				</header>
 				{options.map((option, index) => (
