@@ -5,6 +5,14 @@ import { Toaster } from 'react-hot-toast';
 
 export default function Quiz() {
 	const [quizType, setQuizType] = useState(true); // true = capitals, false = flags
+
+	if (!localStorage.getItem('capital-score')) {
+		localStorage.setItem('capital-score', 0);
+	}
+	if (!localStorage.getItem('flag-score')) {
+		localStorage.setItem('flag-score', 0);
+	}
+
 	const [capitalScore, setCapitalScore] = useState(
 		localStorage.getItem('capital-score') || 0
 	);
