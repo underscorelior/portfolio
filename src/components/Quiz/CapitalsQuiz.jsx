@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import QuizButton from './QuizButton';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
-class Quiz extends Component {
+class CapitalsQuiz extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -88,13 +88,10 @@ class Quiz extends Component {
 		const isDisabled = selectedOption === '';
 
 		return (
-			<div className='flex flex-col gap-y-4 mt-12 min-w-[80%] max-w-[80%] md:min-w-[40%] md:max-w-[40%] w-full  VHcenter'>
-				<Toaster />
-
+			<div className='flex flex-col gap-y-4 min-w-[80%] max-w-[80%] md:min-w-[40%] md:max-w-[40%] w-full  VHcenter'>
 				<h1 className='text-2xl font-semibold mb-3 text-center'>
 					{question}
 				</h1>
-				{/* <div className='min-w-[80%] max-w-[80%] flex flex-col gap-y-4'> */}
 				{options.map((option, index) => (
 					<QuizButton
 						key={index}
@@ -105,7 +102,6 @@ class Quiz extends Component {
 						onClick={this.handleOptionSelect}
 					/>
 				))}
-				{/* </div> */}
 				{!isChecked ? (
 					<button
 						className={'quiz-button-check'}
@@ -127,4 +123,4 @@ class Quiz extends Component {
 	}
 }
 
-export default Quiz;
+export default CapitalsQuiz;
