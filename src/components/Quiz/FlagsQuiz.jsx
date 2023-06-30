@@ -25,6 +25,7 @@ class FlagsQuiz extends Component {
 			'flag-score',
 			parseInt(localStorage.getItem('flag-score')) + (isCorrect ? 1 : 0)
 		);
+		this.props.updateScore();
 		this.setState({ isChecked: true });
 		toast(
 			isCorrect ? 'Correct!' : `Incorrect! Correct Answer: ${answer}.`,
@@ -90,7 +91,6 @@ class FlagsQuiz extends Component {
 	render() {
 		const { flagUrl, options, selectedOption, isChecked } = this.state;
 		const isDisabled = selectedOption === '';
-		console.log(flagUrl);
 
 		return (
 			<section className='flex flex-col gap-y-4 min-w-[80%] max-w-[80%] md:min-w-[40%] md:max-w-[40%] w-full  VHcenter'>

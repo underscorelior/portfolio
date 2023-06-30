@@ -21,6 +21,12 @@ class CapitalsQuiz extends Component {
 	handleAnswerCheck = () => {
 		const { selectedOption, answer } = this.state;
 		const isCorrect = selectedOption === answer;
+		localStorage.setItem(
+			'capital-score',
+			parseInt(localStorage.getItem('capital-score')) +
+				(isCorrect ? 1 : 0)
+		);
+		this.props.updateScore();
 		this.setState({ isChecked: true });
 		toast(
 			isCorrect ? 'Correct!' : `Incorrect! Correct Answer: ${answer}.`,
