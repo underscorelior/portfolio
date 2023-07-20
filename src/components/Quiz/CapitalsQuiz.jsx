@@ -95,7 +95,7 @@ class CapitalsQuiz extends Component {
 		const { question, options, selectedOption, isChecked } = this.state;
 		const isDisabled = selectedOption === '';
 		return (
-			<div className='flex flex-col gap-y-4 min-w-[80%] max-w-[80%] md:min-w-[40%] md:max-w-[40%] w-full  VHcenter'>
+			<div className='flex flex-col gap-y-4 min-w-[80%] max-w-[80%] md:min-w-[40%] md:max-w-[40%] w-full  items-center justify-center'>
 				<h1 className='text-2xl font-semibold mb-3 text-center'>
 					{question}
 				</h1>

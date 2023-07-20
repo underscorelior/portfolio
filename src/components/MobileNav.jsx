@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
+
+	const MotionLink = motion(Link);
 
 	function toggleNav() {
 		setIsOpen(!isOpen);
@@ -47,13 +50,15 @@ function App() {
 
 	return (
 		<>
-			<header className='mobile-navbar'>
-				<h1 className='mobile-navbar-name'>Lior</h1>
+			<header className='sticky top-0 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 w-full rounded-lg flex flex-row items-center justify-between md:hidden z-50 px-[5%] py-[0.375rem] min-w-full border-b border-neutral-300/20'>
+				<h1 className='text-[2.125rem] font-medium text-neutral-900'>
+					Lior
+				</h1>
 				<motion.div
 					variants={iconVariants}
 					animate={isOpen ? 'opened' : 'closed'}
 					onClick={() => toggleNav()}
-					className='mobile-nav-btn'
+					className='w-12 h-12 rounded-full cursor-pointer z-50 items-center flex justify-center'
 				>
 					<svg
 						width='24'
@@ -71,30 +76,20 @@ function App() {
 			</header>
 
 			<motion.nav
-				className='mobile-navbar-menu VHcenter flex flex-col'
+				className='w-full h-full fixed top-0 z-40 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 md:hidden items-center justify-center flex flex-col'
 				initial={false}
 				variants={menuVariants}
 				animate={isOpen ? 'opened' : 'closed'}
 			>
-				<motion.ul className='fixed top-[30vh] flex flex-col VHcenter gap-y-6'>
-					<motion.li
-						className='nav-item'
-						variants={linkVariants}
-					>
-						About
-					</motion.li>
-					<motion.li
-						className='nav-item'
-						variants={linkVariants}
-					>
-						Contact
-					</motion.li>
-					<motion.li
-						className='nav-item bg-neutral-800 text-white p-4 rounded-lg'
+				<motion.ul className='fixed top-[30vh] text-2xl text-neutral-900 list-none font-semibold flex flex-col items-center justify-center gap-y-6'>
+					<MotionLink variants={linkVariants}>About</MotionLink>
+					<MotionLink variants={linkVariants}>Contact</MotionLink>
+					<MotionLink
+						className='bg-neutral-800 text-white p-4 rounded-lg'
 						variants={linkVariants}
 					>
 						View Work
-					</motion.li>
+					</MotionLink>
 				</motion.ul>
 			</motion.nav>
 		</>

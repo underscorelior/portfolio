@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 class Navbar extends Component {
 	render() {
 		return (
-			<nav className='navbar'>
+			<nav className='sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 w-full py-4 border-b border-neutral-200/20 hidden md:flex justify-between'>
 				<div className='min-w-[90%] px-4 mx-auto flex items-center justify-between h-16'>
 					<span className='text-4xl text-neutral-900/90 font-semibold'>
 						Lior
 					</span>
-					<div className='flex space-x-8 text-neutral-900 text-xl VHcenter'>
+					<div className='flex space-x-8 text-neutral-900 text-xl items-center justify-center'>
 						<a href='#'>About</a>
 						<a href='#'>Contact</a>
 						<a

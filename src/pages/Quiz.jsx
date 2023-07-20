@@ -29,7 +29,7 @@ export default function Quiz() {
 	};
 
 	return (
-		<div className='w-full flex flex-col VHcenter gap-y-8 my-8'>
+		<div className='w-full flex flex-col items-center justify-center gap-y-8 my-8'>
 			<Toaster />
 			{quizType ? (
 				<CapitalsQuiz updateScore={updateScore} />

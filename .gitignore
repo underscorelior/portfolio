@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 etc-projects
-
+.unlighthouse

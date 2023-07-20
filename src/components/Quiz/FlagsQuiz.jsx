@@ -93,8 +93,8 @@ class FlagsQuiz extends Component {
 		const isDisabled = selectedOption === '';
 
 		return (
-			<section className='flex flex-col gap-y-4 min-w-[80%] max-w-[80%] md:min-w-[40%] md:max-w-[40%] w-full  VHcenter'>
-				<header className='flex flex-col VHcenter w-full gap-y-4'>
+			<section className='flex flex-col gap-y-4 min-w-[80%] max-w-[80%] md:min-w-[40%] md:max-w-[40%] w-full  items-center justify-center'>
+				<header className='flex flex-col items-center justify-center w-full gap-y-4'>
 					<h1 className='text-2xl font-semibold mb-3 text-center'>
 						Which country does this flag belong to?
 					</h1>

@@ -11,10 +11,10 @@ import Quiz from './pages/Quiz';
 
 function App() {
 	return (
-		<div className='body flex-col justify-between'>
+		<div className='font-poppins bg-neutral-50 min-h-screen min-w-full max-w-full flex items-center flex-col justify-between'>
 			<Navbar />
 			<MobileNavbar />
-			<div className='mb-auto flex VHcenter w-full'>
+			<div className='mb-auto flex items-center justify-center w-full'>
 				<Routes>
 					<Route path='/'>
 						<Route index element={<Home />} />
