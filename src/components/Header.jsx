@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BlobHeader from './Header/BlobHeader';
+
 class Header extends Component {
 	render() {
 		return (

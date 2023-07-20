@@ -48,15 +48,15 @@
 }
 
 .card-zoom:hover .card-zoom-img {
-	--tw-scale-x: 1.05;
-	--tw-scale-y: 1.05;
+	--tw-scale-x: 1.25;
+	--tw-scale-y: 1.25;
 	transform: translate(var(--tw-translate-x), var(--tw-translate-y))
 		rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
 		scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .card-zoom:hover .card-zoom-icon {
-	--tw-scale-x: 1.25;
-	--tw-scale-y: 1.25;
+	--tw-scale-x: 1.15;
+	--tw-scale-y: 1.15;
 	transform: translate(var(--tw-translate-x), var(--tw-translate-y))
 		rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
 		scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));

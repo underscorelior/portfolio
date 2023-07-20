@@ -26,9 +26,9 @@ module.exports = {
 				poppins: ['Poppins', 'sans-serif'],
 			},
 			backgroundImage: {
-				elitlabs:
-					"url('https://www.site-shot.com/cached_image/3MINdCZkEe640AJCrBEACA')",
-				l0n3ly: "url('https://www.site-shot.com/cached_image/DNApDibpEe6gUgJCrBEAAg')",
+				elitlabs: "url('/src/assets/elitlabs.png')",
+				l0n3ly: "url('/src/assets/l0n3ly.png')",
+				polsu: "url('/src/assets/polsu.png')",
 			},
 		},
 	},

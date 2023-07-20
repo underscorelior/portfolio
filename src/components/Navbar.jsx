@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 class Navbar extends Component {
 	render() {
 		return (
-			<nav className='sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 w-full py-4 border-b border-neutral-200/20 hidden md:flex justify-between'>
+			<nav className='sticky top-0 z-10 bg-neutral-100 backdrop-filter backdrop-blur-lg bg-opacity-10 w-full py-3 border-b border-neutral-300/20 hidden md:flex justify-between'>
 				<div className='min-w-[90%] px-4 mx-auto flex items-center justify-between h-16'>
 					<span className='text-4xl text-neutral-900/90 font-semibold'>
 						Lior
@@ -12,12 +13,13 @@ class Navbar extends Component {
 					<div className='flex space-x-8 text-neutral-900 text-xl items-center justify-center'>
 						<a href='#'>About</a>
 						<a href='#'>Contact</a>
-						<a
-							href='#'
-							className='bg-gray-900 text-gray-100 p-4 rounded-2xl'
+						<HashLink
+							to='#work'
+							smooth
+							className='bg-neutral-900 text-neutral-100 p-4 rounded-2xl'
 						>
 							View Work
-						</a>
+						</HashLink>
 					</div>
 				</div>
 			</nav>
