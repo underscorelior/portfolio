@@ -25,11 +25,6 @@ module.exports = {
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
 			},
-			backgroundImage: {
-				elitlabs: "url('/src/assets/elitlabs.png')",
-				l0n3ly: "url('/src/assets/l0n3ly.png')",
-				polsu: "url('/src/assets/polsu.png')",
-			},
 		},
 	},
 };

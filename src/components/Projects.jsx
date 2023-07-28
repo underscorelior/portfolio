@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { BsArrowUpRightSquare } from 'react-icons/bs';
 import { SiPython, SiReact, SiTailwindcss } from 'react-icons/si';
+import elitlabs from '../assets/elitlabs.png';
+import l0n3ly from '../assets/l0n3ly.png';
+import polsu from '../assets/polsu.png';
+
 // Hover effect with zoom in and some icon
 class ProjectCards extends Component {
 	render() {
-		const { title, desc, tech, role, url, twbgname } = this.props;
-		const bgdivstyles =
-			'absolute w-full h-full transition-all duration-500 ease-in-out transform drop-shadow-sm bg-no-repeat bg-cover bg-center card-zoom-img bg-' +
-			twbgname;
+		const { title, desc, tech, role, url, obj } = this.props;
 
 		return (
 			<div className='rounded-xl bg-neutral-100 pb-4 drop-shadow-xl max-w-96 w-96'>
@@ -18,7 +19,11 @@ class ProjectCards extends Component {
 						rel='noreferrer'
 						className='relative flex overflow-hidden drop-shadow-sm rounded-t-xl rounded-b-xl w-96 h-[13.5rem] card-zoom'
 					>
-						<div className={bgdivstyles} />
+						<img
+							src={obj}
+							alt={title}
+							className='absolute w-full h-full transition-all duration-500 ease-in-out transform drop-shadow-sm card-zoom-img'
+						/>
 						<div className='bg-black opacity-25 absolute w-full h-full' />
 						<BsArrowUpRightSquare className='absolute text-5xl transition-all duration-500 ease-in-out transform scale-100 text-neutral-50 opacity-80 card-zoom-icon right-0 bottom-0 m-4' />
 					</a>
@@ -61,7 +66,7 @@ class Projects extends Component {
 							</>
 						}
 						url='https://elitlabs.com'
-						twbgname='elitlabs'
+						obj={elitlabs}
 					/>
 					<ProjectCards
 						title='l0n3ly.com'
@@ -76,7 +81,7 @@ class Projects extends Component {
 							</>
 						}
 						url='https://l0n3ly.com'
-						twbgname='l0n3ly'
+						obj={l0n3ly}
 					/>
 					<ProjectCards
 						title='Polsu'
@@ -95,7 +100,7 @@ class Projects extends Component {
 							</>
 						}
 						url='https://polsu.xyz'
-						twbgname='polsu'
+						obj={polsu}
 					/>
 				</div>
 			</section>
