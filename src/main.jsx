@@ -11,7 +11,7 @@ import Quiz from './pages/Quiz';
 
 function App() {
 	return (
-		<div className='font-poppins bg-neutral-100 min-h-screen min-w-full max-w-full flex items-center flex-col justify-between'>
+		<div className='font-poppins bg-neutral-100 min-h-screen min-w-full max-w-full w-full flex items-center flex-col justify-between'>
 			<Navbar />
 			<MobileNavbar />
 			<div className='mb-auto flex items-center justify-center w-full'>

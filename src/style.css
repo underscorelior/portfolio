@@ -62,3 +62,6 @@
 		scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	opacity: 1;
 }
+.card-zoom:hover .card-zoom-text {
+	background-color: rgb(23 23 23 / 0.8);
+}

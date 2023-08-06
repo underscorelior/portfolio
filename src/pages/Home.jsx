@@ -5,7 +5,7 @@ import Projects from '../components/Projects';
 class Home extends Component {
 	render() {
 		return (
-			<div>
+			<div className='w-full'>
 				<Header />
 				<Projects />
 			</div>

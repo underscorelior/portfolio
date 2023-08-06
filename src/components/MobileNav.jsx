@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const MotionLink = motion(Link);
+	const MotionHash = motion(HashLink);
 
 	function toggleNav() {
 		setIsOpen(!isOpen);
@@ -50,7 +52,7 @@ function App() {
 
 	return (
 		<>
-			<header className='sticky top-0 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 w-full rounded-lg flex flex-row items-center justify-between md:hidden z-50 px-[5%] py-[0.375rem] min-w-full border-b border-neutral-300/20'>
+			<header className='sticky top-0 bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 w-full flex flex-row items-center justify-between md:hidden z-50 px-[5%] py-[0.375rem] min-w-full border-b border-neutral-300/20'>
 				<h1 className='text-[2.125rem] font-medium text-neutral-900'>
 					Lior
 				</h1>
@@ -84,12 +86,15 @@ function App() {
 				<motion.ul className='fixed top-[30vh] text-2xl text-neutral-900 list-none font-semibold flex flex-col items-center justify-center gap-y-6'>
 					<MotionLink variants={linkVariants}>About</MotionLink>
 					<MotionLink variants={linkVariants}>Contact</MotionLink>
-					<MotionLink
+					<MotionHash
 						className='bg-neutral-800 text-white p-4 rounded-lg'
 						variants={linkVariants}
+						to='#work'
+						onClick={() => toggleNav()}
+						smooth
 					>
 						View Work
-					</MotionLink>
+					</MotionHash>
 				</motion.ul>
 			</motion.nav>
 		</>
