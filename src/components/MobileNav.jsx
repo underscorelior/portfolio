@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { FiPlus } from 'react-icons/fi';
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -52,16 +53,16 @@ function App() {
 
 	return (
 		<>
-			<header className="sticky top-0 z-50 flex w-full min-w-full flex-row items-center justify-between border-b-2 border-neutral-300/20 bg-white bg-opacity-10 px-[5%] py-[0.375rem] backdrop-blur-lg backdrop-filter md:hidden">
-				<h1 className="text-[2.125rem] font-medium text-neutral-900">Lior</h1>
+			<header className="sticky top-0 z-50 flex w-full min-w-full flex-row items-center justify-between border-b-2 border-neutral-300/20 bg-white bg-opacity-10 px-[5%] py-[0.5rem] backdrop-blur-lg backdrop-filter md:hidden">
+				<h1 className="text-[2.125rem] font-semibold text-neutral-900">Lior</h1>
 				<motion.div
 					variants={iconVariants}
 					animate={isOpen ? 'opened' : 'closed'}
 					onClick={() => toggleNav()}
 					className="z-50 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full">
-					<svg
-						width="24"
-						height="24"
+					{/* <svg
+						width="36"
+						height="36"
 						viewBox="0 0 24 24"
 						className="stroke-neutral-600 stroke-1"
 						xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +70,8 @@ function App() {
 							d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z"
 							fill="#525252"
 						/>
-					</svg>
+					</svg> */}
+					<FiPlus className='text-neutral-800 text-4xl font-black' />
 				</motion.div>
 			</header>
 

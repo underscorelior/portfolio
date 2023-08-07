@@ -16,7 +16,7 @@ class Header extends Component {
 						{header.subtitle}
 					</h1>
 					<div className="mt-4 flex w-full items-center">
-						<span className="w-full text-center text-2xl font-normal text-neutral-700 md:text-left lg:text-5xl">
+						<span className="w-full text-center text-3xl font-normal text-neutral-700 md:text-left lg:text-5xl">
 							{header.description}
 						</span>
 					</div>
