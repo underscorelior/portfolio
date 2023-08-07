@@ -52,7 +52,7 @@ function App() {
 
 	return (
 		<>
-			<header className="sticky top-0 z-50 flex w-full min-w-full flex-row items-center justify-between border-b border-neutral-300/20 bg-white bg-opacity-10 px-[5%] py-[0.375rem] backdrop-blur-lg backdrop-filter md:hidden">
+			<header className="sticky top-0 z-50 flex w-full min-w-full flex-row items-center justify-between border-b-2 border-neutral-300/20 bg-white bg-opacity-10 px-[5%] py-[0.375rem] backdrop-blur-lg backdrop-filter md:hidden">
 				<h1 className="text-[2.125rem] font-medium text-neutral-900">Lior</h1>
 				<motion.div
 					variants={iconVariants}
