@@ -61,7 +61,6 @@ class Projects extends Component {
 					}
 					url="https://elitlabs.com"
 					obj={elitlabs}
-					centered={false}
 				/>
 				<ProjectCards
 					title="l0n3ly.com"
@@ -75,7 +74,6 @@ class Projects extends Component {
 					}
 					url="https://l0n3ly.com"
 					obj={l0n3ly}
-					centered={false}
 				/>
 				<ProjectCards
 					title="Polsu"
@@ -91,7 +89,7 @@ class Projects extends Component {
 					}
 					url="https://polsu.xyz"
 					obj={polsu}
-					centered={true}
+					centered
 				/>
 			</section>
 		);

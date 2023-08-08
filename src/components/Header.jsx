@@ -5,7 +5,7 @@ import { SiDiscord, SiGithub, SiGmail } from 'react-icons/si';
 class Header extends Component {
 	render() {
 		return (
-			<header className="relative mx-auto my-44 flex w-full justify-center md:my-24 lg:my-36">
+			<header className="relative mx-auto my-36 flex w-full justify-center md:my-24 lg:my-36">
 				<div className="relative max-w-lg blur-xl lg:blur-3xl">
 					<div className="absolute -left-10 top-10 h-40 w-40 animate-blob rounded-full bg-fuchsia-400 mix-blend-multiply blur-xl filter sm:h-60 sm:w-60 lg:-left-20 lg:h-80 lg:w-80 lg:blur-3xl"></div>
 					<div className="animation-delay-2000 absolute left-32 top-0 h-40 w-40 animate-blob rounded-full bg-teal-300 mix-blend-multiply blur-xl filter sm:h-60 sm:w-60 lg:left-64 lg:h-80 lg:w-80 lg:blur-3xl"></div>
