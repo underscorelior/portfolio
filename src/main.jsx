@@ -7,7 +7,6 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import MobileNavbar from './components/MobileNav';
 import Footer from './components/Footer';
-import Quiz from './pages/Quiz';
 
 function App() {
 	return (
@@ -18,7 +17,12 @@ function App() {
 				<Routes>
 					<Route path="/">
 						<Route index element={<Home />} />
-						<Route path="quiz" element={<Quiz />} />
+						<Route
+							path="quiz"
+							element={
+								window.location.href = 'https://underscore-quiz.vercel.app/'
+							}
+						/>
 					</Route>
 				</Routes>
 			</div>

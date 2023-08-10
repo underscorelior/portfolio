@@ -22,7 +22,7 @@ class Header extends Component {
 					</div>
 					<div className="mt-8 flex w-full flex-col items-center gap-x-6 gap-y-4 md:flex-row">
 						<HashLink
-							to="#work"
+							to="/#work"
 							smooth
 							className="flex w-full max-w-[86%] items-center justify-center rounded-2xl border-2 bg-neutral-800 p-7 px-8 text-center text-2xl font-semibold text-neutral-100 duration-300 hover:bg-neutral-900 md:max-w-[50%] md:p-6 lg:max-w-[20%]">
 							View Work

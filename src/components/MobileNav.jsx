@@ -59,19 +59,8 @@ function App() {
 					variants={iconVariants}
 					animate={isOpen ? 'opened' : 'closed'}
 					onClick={() => toggleNav()}
-					className="z-50 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full">
-					{/* <svg
-						width="36"
-						height="36"
-						viewBox="0 0 24 24"
-						className="stroke-neutral-600 stroke-1"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z"
-							fill="#525252"
-						/>
-					</svg> */}
-					<FiPlus className='text-neutral-800 text-4xl font-black' />
+					className="z-50 flex cursor-pointer items-center justify-center rounded-full mr-[5%]">
+					<FiPlus className="text-4xl font-black text-neutral-800" />
 				</motion.div>
 			</header>
 
@@ -86,7 +75,7 @@ function App() {
 					<MotionHash
 						className="rounded-lg bg-neutral-800 p-4 text-white"
 						variants={linkVariants}
-						to="#work"
+						to="/#work"
 						onClick={() => toggleNav()}
 						smooth>
 						View Work

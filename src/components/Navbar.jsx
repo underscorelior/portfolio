@@ -14,7 +14,7 @@ class Navbar extends Component {
 						<a href="#">About</a>
 						<a href="#">Contact</a>
 						<HashLink
-							to="#work"
+							to="/#work"
 							smooth
 							className="rounded-2xl bg-neutral-900 p-4 text-neutral-100">
 							View Work
