@@ -17,12 +17,14 @@ function App() {
 				<Routes>
 					<Route path="/">
 						<Route index element={<Home />} />
-						<Route
+						{/* <Route
 							path="quiz"
-							element={
-								window.location.href = 'https://underscore-quiz.vercel.app/'
-							}
-						/>
+							element={() => {
+								window.location.href = 'https://underscore-quiz.vercel.app/';
+								return null;
+							}}
+						/> */}
+						<Route path='*' element={<Home />} />
 					</Route>
 				</Routes>
 			</div>

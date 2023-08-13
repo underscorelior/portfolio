@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BsArrowUpRightSquare } from 'react-icons/bs';
-import { SiPython, SiReact, SiTailwindcss } from 'react-icons/si';
+import { SiNextdotjs, SiPlanetscale, SiPython, SiReact, SiTailwindcss } from 'react-icons/si';
 import elitlabs from '../assets/elitlabs.png';
 import l0n3ly from '../assets/l0n3ly.png';
 import polsu from '../assets/polsu.png';
@@ -47,7 +47,7 @@ class Projects extends Component {
 	render() {
 		return (
 			<section
-				className="mx-auto flex w-full max-w-[85%] flex-col items-center justify-center gap-y-10 pt-8 md:grid md:grid-cols-2 md:gap-x-10 md:pt-[5.6rem]"
+				className="mx-auto flex w-full max-w-[85%] flex-col items-center justify-center gap-y-10 pt-[4.75rem] md:grid md:grid-cols-2 md:gap-x-10 md:pt-[5.6rem]"
 				id="work">
 				<ProjectCards
 					title="ElitLabs"
@@ -89,7 +89,21 @@ class Projects extends Component {
 					}
 					url="https://polsu.xyz"
 					obj={polsu}
-					centered
+				/>
+				<ProjectCards
+					title="Quiz"
+					desc="A simple quiz game for learning country flags and capitals."
+					tech={
+						<>
+							<SiNextdotjs className='mr-1 inline-block text-red-500' />
+							<span className="font-bold">{' | '}</span>
+							<SiTailwindcss className='mr-1 inline-block text-red-500' />
+							<span className="font-bold">{' | '}</span>
+							{/* < className='mr-1 inline-block text-red-500' /> */} {/* Find an auth one */}
+							{/* <span className="font-bold">{' | '}</span> */}
+							<SiPlanetscale className='mr-1 inline-block text-red-500' />
+						</>
+					}
 				/>
 			</section>
 		);
