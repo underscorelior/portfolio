@@ -26,17 +26,17 @@ class ProjectCards extends Component {
 						className="card-zoom-img absolute -z-10 h-full w-full transform drop-shadow-sm transition-all duration-[350ms] ease-in-out"
 					/>
 					<div className="absolute h-full w-full bg-black opacity-25" />
-					<div className="card-zoom-text absolute flex max-w-[87.5%]  flex-col items-center justify-center rounded-2xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms]">
-						<h1 className="text-2xl font-bold text-white">{title}</h1>
-						<div className="flex flex-col">
-							<p className="text-xl text-neutral-50">{desc}</p>
+					<div className="card-zoom-text absolute flex h-full max-h-[87.5%] max-w-[87.5%] flex-col items-center justify-center rounded-xl md:rounded-2xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms]">
+						<h1 className="text-xl md:text-2xl font-bold text-white">{title}</h1>
+						<div className="flex flex-col h-full w-full justify-center">
+							<p className="text-md md:text-xl text-neutral-50">{desc}</p>
 							<p className="text-lg font-medium text-neutral-50/90">
-								Technologies: <span className="text-xl">{tech}</span>
+								Technologies: <span className="text-md md:text-lg">{tech}</span>
 							</p>
 							<p>{role}</p>
 						</div>
 					</div>
-					<BsArrowUpRightSquare className="card-zoom-icon absolute bottom-0 right-0 m-4 scale-100 transform text-5xl text-neutral-50 opacity-80 transition-all duration-500 ease-in-out" />
+					<BsArrowUpRightSquare className="card-zoom-icon absolute bottom-0 right-0 m-2 md:m-4 scale-100 transform text-4xl md:text-5xl text-neutral-50 opacity-80 transition-all duration-500 ease-in-out" />
 				</a>
 			</div>
 		);
@@ -54,9 +54,9 @@ class Projects extends Component {
 					desc="An online tutoring class for introduction to Python."
 					tech={
 						<>
-							<SiTailwindcss className="mr-1 inline-block text-[#06B6D4]" />
+							<SiReact className="inline-block text-[#61DAFB]" />
 							<span className="font-bold">{' | '}</span>
-							<SiReact className="ml-1 inline-block text-[#61DAFB]" />
+							<SiTailwindcss className="inline-block text-[#06B6D4]" />
 						</>
 					}
 					url="https://elitlabs.com"
@@ -67,9 +67,9 @@ class Projects extends Component {
 					desc="A portfolio commisioned by loadingl0n3ly."
 					tech={
 						<>
-							<SiTailwindcss className="mr-1 inline-block text-[#06B6D4]" />
+							<SiReact className="inline-block text-[#61DAFB]" />
 							<span className="font-bold">{' | '}</span>
-							<SiReact className="ml-1 inline-block text-[#61DAFB]" />
+							<SiTailwindcss className="inline-block text-[#06B6D4]" />
 						</>
 					}
 					url="https://l0n3ly.com"
@@ -80,11 +80,11 @@ class Projects extends Component {
 					desc="A multi-purpose discord bot with hypixel stats."
 					tech={
 						<>
-							<SiTailwindcss className="mr-1 inline-block text-[#06B6D4]" />
+							<SiReact className="inline-block text-[#61DAFB]" />
 							<span className="font-bold">{' | '}</span>
-							<SiReact className="ml-1 inline-block text-[#61DAFB]" />
+							<SiPython className="inline-block text-[#3776AB]" />
 							<span className="font-bold">{' | '}</span>
-							<SiPython className="ml-1 inline-block text-[#3776AB]" />
+							<SiTailwindcss className="inline-block text-[#06B6D4]" />
 						</>
 					}
 					url="https://polsu.xyz"
@@ -95,13 +95,13 @@ class Projects extends Component {
 					desc="A simple quiz game for learning country flags and capitals."
 					tech={
 						<>
-							<SiNextdotjs className='mr-1 inline-block text-red-500' />
+							<SiNextdotjs className='inline-block text-red-500' />
 							<span className="font-bold">{' | '}</span>
-							<SiTailwindcss className='mr-1 inline-block text-red-500' />
+							<SiTailwindcss className='inline-block text-red-500' />
 							<span className="font-bold">{' | '}</span>
-							{/* < className='mr-1 inline-block text-red-500' /> */} {/* Find an auth one */}
+							{/* < className='inline-block text-red-500' /> */} {/* Find an auth one */}
 							{/* <span className="font-bold">{' | '}</span> */}
-							<SiPlanetscale className='mr-1 inline-block text-red-500' />
+							<SiPlanetscale className='inline-block text-red-500' />
 						</>
 					}
 				/>
