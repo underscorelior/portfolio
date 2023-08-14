@@ -59,7 +59,7 @@ function App() {
 					variants={iconVariants}
 					animate={isOpen ? 'opened' : 'closed'}
 					onClick={() => toggleNav()}
-					className="z-50 flex cursor-pointer items-center justify-center rounded-full mr-[5%]">
+					className="z-50 mr-[5%] flex cursor-pointer items-center justify-center rounded-full">
 					<FiPlus className="text-4xl font-black text-neutral-800" />
 				</motion.div>
 			</header>
