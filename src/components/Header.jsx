@@ -24,7 +24,7 @@ class Header extends Component {
 						<HashLink
 							to="/#work"
 							smooth
-							className="flex w-full items-center justify-center rounded-2xl border-2 bg-neutral-800 p-7 px-8 text-center text-2xl font-semibold text-neutral-100 duration-300 hover:bg-neutral-900 md:max-w-[50%] md:p-6 lg:max-w-[20%]">
+							className="flex w-full items-center justify-center rounded-2xl border-2 bg-neutral-800 p-7 px-8 text-center text-2xl font-semibold text-neutral-100 duration-300 hover:bg-neutral-900 md:max-w-[50%] md:p-6 xl:max-w-[20%]">
 							View Work
 						</HashLink>
 						<section className="flex w-full flex-row justify-between md:justify-normal gap-x-4 md:gap-x-6">
