@@ -32,14 +32,14 @@ class ProjectCards extends Component {
 						className="card-zoom-img absolute -z-10 h-full w-full transform drop-shadow-sm transition-all duration-[350ms] ease-in-out"
 					/>
 					<div className="absolute h-full w-full bg-black opacity-25" />
-					<div className="card-zoom-text absolute flex h-full max-h-[87.5%] max-w-[87.5%] flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:rounded-2xl">
-						<h1 className="text-xl font-bold text-white md:text-2xl">
+					<div className="card-zoom-text absolute flex h-full md:h-auto max-h-[87.5%] max-w-[87.5%] flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:rounded-2xl">
+						<h1 className="text-xl md:text-4xl font-bold text-white">
 							{title}
 						</h1>
 						<div className="flex h-full w-full flex-col justify-center">
-							<p className="text-md text-neutral-50 md:text-xl">{desc}</p>
-							<p className="text-lg font-medium text-neutral-50/90">
-								Technologies: <span className="text-md md:text-lg">{tech}</span>
+							<p className="text-md xl:text-2xl text-neutral-50 md:text-xl">{desc}</p>
+							<p className="text-lg xl:text-xl font-medium text-neutral-50/90">
+								Technologies: <span className="text-md md:text-lg xl:text-xl">{tech}</span>
 							</p>
 							<p>{role}</p>
 						</div>
@@ -112,7 +112,7 @@ class Projects extends Component {
 							{/* <SiPlanetscale className="inline-block text-red-500" /> */}
 						</>
 					}
-					url="https://underscore-quiz.vercel.app/"
+					url="https://quiz.underscore.wtf/"
 					obj={quiz}
 				/>
 			</section>
