@@ -11,6 +11,7 @@ import elitlabs from '../assets/elitlabs.png';
 import l0n3ly from '../assets/l0n3ly.png';
 import polsu from '../assets/polsu.png';
 import quiz from '../assets/quiz.png';
+
 class ProjectCards extends Component {
 	render() {
 		const { title, desc, tech, role, url, obj, centered } = this.props;
@@ -18,7 +19,7 @@ class ProjectCards extends Component {
 		return (
 			<div
 				className={
-					'mx-auto w-full rounded-xl drop-shadow-xl' +
+					'mx-auto w-full md:w-[88%] 2xl:w-full rounded-xl drop-shadow-xl' +
 					(centered ? ' md:col-span-2 md:max-w-[calc(50%-1.25rem)]' : '')
 				}>
 				<a
@@ -32,7 +33,7 @@ class ProjectCards extends Component {
 						className="card-zoom-img absolute -z-10 h-full w-full transform drop-shadow-sm transition-all duration-[350ms] ease-in-out"
 					/>
 					<div className="absolute h-full w-full bg-black opacity-25" />
-					<div className="card-zoom-text absolute flex h-full md:h-auto max-h-[87.5%] max-w-[87.5%] flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:rounded-2xl">
+					<div className="card-zoom-text absolute flex lg:h-full h-auto lg:max-h-[87.5%] md:max-w-[87.5%] flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:rounded-2xl">
 						<h1 className="text-xl md:text-4xl font-bold text-white">
 							{title}
 						</h1>
@@ -55,7 +56,7 @@ class Projects extends Component {
 	render() {
 		return (
 			<section
-				className="mx-auto mt-[4.75rem] flex w-full max-w-[85%] flex-col items-center justify-center gap-y-10 md:mt-[5.6rem] md:grid md:grid-cols-2 md:gap-x-10"
+				className="mx-auto mt-[4.75rem] flex w-full max-w-[85%] flex-col items-center justify-center gap-y-10 2xl:pt-[5.75rem] 2xl:grid 2xl:grid-cols-2 2xl:gap-x-10"
 				id="work">
 				<ProjectCards
 					title="ElitLabs"
