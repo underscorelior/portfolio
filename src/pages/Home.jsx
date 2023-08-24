@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
-import { Link } from 'react-router-dom';
 import Projects from '../components/Projects';
+import About from '../components/About';
+import Contact from '../components/Contact';
 class Home extends Component {
 	render() {
 		return (
 			<div className="w-full">
 				<Header />
 				<Projects />
+				<About />
+				<Contact />
 			</div>
 		);
 	}

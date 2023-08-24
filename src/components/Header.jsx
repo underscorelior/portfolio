@@ -40,7 +40,7 @@ class Header extends Component {
 								href="mailto://lior@underscore.wtf"
 								target="_blank"
 								rel="noopener noreferrer"
-								aria-label="twitch"
+								aria-label="email address"
 								className="w-auto rounded-2xl border-2 bg-[#EA4335] p-[1.64rem] text-4xl text-white duration-300 hover:bg-[#d93729] md:p-5">
 								<SiGmail />
 							</a>
