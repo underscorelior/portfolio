@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BsArrowUpRightSquare } from 'react-icons/bs';
 import {
 	SiNextdotjs,
-	SiPlanetscale,
 	SiPython,
 	SiReact,
 	SiTailwindcss,
@@ -56,7 +55,7 @@ class Projects extends Component {
 	render() {
 		return (
 			<section
-				className="mx-auto mt-[4.75rem] flex w-full max-w-[85%] flex-col items-center justify-center gap-y-10 2xl:pt-[5.75rem] 2xl:grid 2xl:grid-cols-2 2xl:gap-x-10"
+				className="mx-auto pt-[4.75rem] flex w-full max-w-[85%] flex-col items-center justify-center gap-y-10 xl:pt-[5.75rem] xl:grid xl:grid-cols-2 xl:gap-x-10"
 				id="work">
 				<ProjectCards
 					title="ElitLabs"
