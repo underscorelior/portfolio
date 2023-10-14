@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { BsArrowUpRightSquare } from 'react-icons/bs';
-import {
-	SiNextdotjs,
-	SiPython,
-	SiReact,
-	SiTailwindcss,
-} from 'react-icons/si';
+import { SiNextdotjs, SiPython, SiReact, SiTailwindcss } from 'react-icons/si';
 import elitlabs from '../assets/elitlabs.png';
 import l0n3ly from '../assets/l0n3ly.png';
 import polsu from '../assets/polsu.png';
@@ -18,28 +13,32 @@ class ProjectCards extends Component {
 		return (
 			<div
 				className={
-					'mx-auto w-full md:w-[88%] 2xl:w-full rounded-xl drop-shadow-xl' +
+					'mx-auto w-full overflow-hidden rounded-xl drop-shadow-xl md:w-[88%] 2xl:w-full' +
 					(centered ? ' md:col-span-2 md:max-w-[calc(50%-1.25rem)]' : '')
 				}>
 				<a
 					href={url}
 					target="_blank"
 					rel="noreferrer"
-					className="card-zoom relative flex aspect-video items-center justify-center overflow-hidden rounded-b-xl rounded-t-xl drop-shadow-2xl lg:h-auto lg:w-full">
+					className="card-zoom relative flex aspect-video items-center justify-center rounded-b-xl rounded-t-xl drop-shadow-2xl lg:h-auto lg:w-full">
 					<img
 						src={obj}
 						alt={title}
 						className="card-zoom-img absolute -z-10 h-full w-full transform drop-shadow-sm transition-all duration-[350ms] ease-in-out"
+						style={{ pointerEvents: 'none' }}
 					/>
-					<div className="absolute h-full w-full bg-black opacity-25" />
-					<div className="card-zoom-text absolute flex lg:h-full h-auto lg:max-h-[87.5%] md:max-w-[87.5%] flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:rounded-2xl">
-						<h1 className="text-xl md:text-4xl font-bold text-white">
+					<div className="absolute bg-black opacity-25" />
+					<div className="card-zoom-text absolute flex flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:rounded-2xl">
+						<h1 className="text-xl font-bold text-white md:text-4xl">
 							{title}
 						</h1>
-						<div className="flex h-full w-full flex-col justify-center">
-							<p className="text-md xl:text-2xl text-neutral-50 md:text-xl">{desc}</p>
-							<p className="text-lg xl:text-xl font-medium text-neutral-50/90">
-								Technologies: <span className="text-md md:text-lg xl:text-xl">{tech}</span>
+						<div className="flex  flex-col justify-center">
+							<p className="text-md text-neutral-50 md:text-xl xl:text-2xl">
+								{desc}
+							</p>
+							<p className="text-lg font-medium text-neutral-50/90 xl:text-xl">
+								Technologies:{' '}
+								<span className="text-md md:text-lg xl:text-xl">{tech}</span>
 							</p>
 							<p>{role}</p>
 						</div>
@@ -55,14 +54,14 @@ class Projects extends Component {
 	render() {
 		return (
 			<section
-				className="mx-auto pt-[4.75rem] flex w-full max-w-[85%] flex-col items-center justify-center gap-y-10 xl:pt-[5.75rem] xl:grid xl:grid-cols-2 xl:gap-x-10"
+				className="mx-auto flex w-full max-w-[85%] flex-col items-center justify-center gap-y-10 pt-[4.75rem] xl:grid xl:grid-cols-2 xl:gap-x-10 xl:pt-[5.75rem]"
 				id="work">
 				<ProjectCards
 					title="ElitLabs"
 					desc="An online tutoring class for introduction to Python."
 					tech={
 						<>
-							<SiReact className="inline-block text-[#61DAFB]" />
+							<SiNextdotjs className="inline-block rounded-[200%] bg-white text-[#000000] text-clip" />
 							<span className="font-bold">{' | '}</span>
 							<SiTailwindcss className="inline-block text-[#06B6D4]" />
 						</>
@@ -103,11 +102,12 @@ class Projects extends Component {
 					desc="A simple quiz game for learning country flags and capitals."
 					tech={
 						<>
-							<SiNextdotjs className="inline-block text-[#000000] bg-white rounded-[200%]" />
+							<SiNextdotjs className="inline-block rounded-[200%] bg-white text-[#000000]" />
 							<span className="font-bold">{' | '}</span>
 							<SiTailwindcss className="inline-block text-[#06B6D4]" />
 							{/* <span className="font-bold">{' | '}</span> */}
-							{/* < className='inline-block text-red-500' /> */} {/* Find an auth one */}
+							{/* < className='inline-block text-red-500' /> */}{' '}
+							{/* Find an auth one */}
 							{/* <span className="font-bold">{' | '}</span> */}
 							{/* <SiPlanetscale className="inline-block text-red-500" /> */}
 						</>
