@@ -27,28 +27,28 @@ class About extends Component {
 						I'm a high school junior based in the United States who loves to
 						work on new projects and learn new technologies. I have experience
 						in many areas of development, including:
-						<span className="inline-block">
-							<SiPython className="ml-2 mr-1 inline-block text-2xl text-[#3776AB]" />{' '}
+						<span className="inline-block ml-2 mr-3">
+							<SiPython className="mr-1 inline-block text-2xl text-[#3776AB]" />{' '}
 							Python,{' '}
 						</span>
-						<span className="inline-block">
-							<SiJavascript className="ml-2 inline-block text-2xl text-[#F7DF1E]" />{' '}
+						<span className="inline-block mr-2">
+							<SiJavascript className="inline-block text-2xl text-[#F7DF1E]" />{' '}
 							JavaScript,{' '}
 						</span>
-						<span className="inline-block">
-							<SiReact className="ml-2 inline-block text-2xl text-[#61DAFB]" />{' '}
+						<span className="inline-block mr-2">
+							<SiReact className="inline-block text-2xl text-[#61DAFB]" />{' '}
 							React,{' '}
 						</span>
-						<span className="inline-block">
-							<SiNextdotjs className="ml-2 inline-block text-2xl text-[#000000]" />{' '}
+						<span className="inline-block mr-2">
+							<SiNextdotjs className="inline-block text-2xl text-[#000000]" />{' '}
 							Next.js,{' '}
 						</span>
-						<span className="inline-block">
-							<SiTailwindcss className="ml-2 inline-block text-2xl text-[#38B2AC]" />{' '}
+						<span className="inline-block mr-2">
+							<SiTailwindcss className="inline-block text-2xl text-[#38B2AC]" />{' '}
 							TailwindCSS,{' '}
 						</span>
 						<span className="inline-block">
-							<FaDatabase className="ml-2 inline-block text-2xl text-neutral-700" />{' '}
+							<FaDatabase className="inline-block text-2xl text-neutral-700" />{' '}
 							SQL
 						</span>
 						, and more. I am currently working on a few projects, including{' '}
