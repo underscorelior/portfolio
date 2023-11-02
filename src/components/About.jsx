@@ -32,23 +32,23 @@ class About extends Component {
 							Python,{' '}
 						</span>
 						<span className="inline-block">
-							<SiJavascript className="mx-2 inline-block text-2xl text-[#F7DF1E]" />{' '}
+							<SiJavascript className="ml-2 inline-block text-2xl text-[#F7DF1E]" />{' '}
 							JavaScript,{' '}
 						</span>
 						<span className="inline-block">
-							<SiTailwindcss className="mx-2 inline-block text-2xl text-[#38B2AC]" />{' '}
-							TailwindCSS,{' '}
-						</span>
-						<span className="inline-block">
-							<SiReact className="mx-2 inline-block text-2xl text-[#61DAFB]" />{' '}
+							<SiReact className="ml-2 inline-block text-2xl text-[#61DAFB]" />{' '}
 							React,{' '}
 						</span>
 						<span className="inline-block">
-							<SiNextdotjs className="mx-2 inline-block text-2xl text-[#000000]" />{' '}
+							<SiNextdotjs className="ml-2 inline-block text-2xl text-[#000000]" />{' '}
 							Next.js,{' '}
 						</span>
 						<span className="inline-block">
-							<FaDatabase className="mx-2 inline-block text-2xl text-neutral-700" />{' '}
+							<SiTailwindcss className="ml-2 inline-block text-2xl text-[#38B2AC]" />{' '}
+							TailwindCSS,{' '}
+						</span>
+						<span className="inline-block">
+							<FaDatabase className="ml-2 inline-block text-2xl text-neutral-700" />{' '}
 							SQL
 						</span>
 						, and more. I am currently working on a few projects, including{' '}
