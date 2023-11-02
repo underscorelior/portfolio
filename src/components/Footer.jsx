@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SiGithub, SiDiscord, SiGmail } from 'react-icons/si';
+import { SiGithub, SiDiscord, SiGmail, SiLinkedin } from 'react-icons/si';
 import { HashLink } from 'react-router-hash-link';
 class Footer extends Component {
 	state = {};
@@ -8,9 +8,12 @@ class Footer extends Component {
 			<section className="mt-16 flex h-auto w-full items-center justify-center rounded-t-lg border-t-2 border-gray-200 p-8 lg:p-6">
 				<footer className="mx-auto flex w-full flex-col gap-x-10 md:max-w-[90%] md:flex-row md:justify-between">
 					<div className="flex flex-col gap-x-10 md:flex-row md:items-center md:justify-center">
-						<a className="text-4xl font-bold text-neutral-800 md:text-3xl">
+						<HashLink
+							className="text-4xl font-bold text-neutral-800 md:text-3xl"
+							to="/#"
+							smooth>
 							2023 Lior
-						</a>
+						</HashLink>
 						<div className="mb-4 mt-6 flex flex-col gap-x-10 gap-y-4 text-xl font-medium text-neutral-800">
 							<h1 className="text-3xl font-semibold md:hidden">Pages</h1>
 							<div className="flex flex-col gap-x-5 md:grid md:grid-cols-2 md:grid-rows-2 lg:flex lg:flex-row">
@@ -48,6 +51,12 @@ class Footer extends Component {
 								target="_blank"
 								rel="noopener noreferrer">
 								<SiGmail color="#EA4335" size={32} />
+							</a>
+							<a 
+								href="https://www.linkedin.com/in/liorpendler/"
+								target="_blank"
+								rel="noopener noreferrer">
+								<SiLinkedin color="#0077B5" size={32} />
 							</a>
 						</div>
 					</div>

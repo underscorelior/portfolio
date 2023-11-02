@@ -12,11 +12,11 @@ class Header extends Component {
 					<div className="animation-delay-4000 absolute left-10 top-16 h-40 w-40 animate-blob rounded-full bg-lime-300 blur-xl filter sm:h-60 sm:w-60 lg:left-20 lg:top-32 lg:h-80 lg:w-80 lg:blur-3xl"></div>
 				</div>
 				<section className="relative flex h-full w-full max-w-[85%] flex-col justify-center rounded-lg sm:max-w-[70%] lg:w-[81%] lg:max-w-[75%]">
-					<h1 className="text-center text-[2.5rem] font-semibold leading-[3.25rem] text-neutral-900 sm:text-5xl md:text-left md:text-6xl md:leading-[3.5rem] lg:w-[81%] lg:text-7xl lg:font-medium 3xl:w-[50%]">
+					<h1 className="text-center text-[2.5rem] font-semibold leading-[3.25rem] text-neutral-900 sm:text-5xl md:text-left md:text-6xl md:leading-[3.5rem] lg:w-[81%] lg:text-6xl lg:font-medium 3xl:w-[50%]">
 						{header.subtitle}
 					</h1>
 					<div className="mt-4 flex w-full items-center">
-						<span className="w-full text-center text-3xl font-normal text-neutral-700 md:text-left lg:text-5xl">
+						<span className="w-full text-center text-3xl font-normal text-neutral-700 md:text-left lg:w-[65%] lg:text-4xl">
 							{header.description}
 						</span>
 					</div>

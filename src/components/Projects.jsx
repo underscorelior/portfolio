@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { BsArrowUpRightSquare } from 'react-icons/bs';
-import { SiNextdotjs, SiPython, SiReact, SiTailwindcss } from 'react-icons/si';
+import {
+	SiNextdotjs,
+	SiPlanetscale,
+	SiPython,
+	SiReact,
+	SiTailwindcss,
+} from 'react-icons/si';
 import elitlabs from '../assets/elitlabs.png';
 import l0n3ly from '../assets/l0n3ly.png';
 import polsu from '../assets/polsu.png';
@@ -8,27 +14,27 @@ import quiz from '../assets/quiz.png';
 
 class ProjectCards extends Component {
 	render() {
-		const { title, desc, tech, role, url, obj, centered } = this.props;
+		const { title, desc, tech, role, url, obj, centered, white } = this.props;
 
 		return (
 			<div
 				className={
-					'mx-auto w-full overflow-hidden rounded-xl drop-shadow-xl md:w-[88%] 2xl:w-full' +
+					'mx-auto flex h-auto w-[90%] items-center justify-center overflow-hidden rounded-xl drop-shadow-xl md:w-2/3 lg:w-[90%] 2xl:w-full' +
 					(centered ? ' md:col-span-2 md:max-w-[calc(50%-1.25rem)]' : '')
 				}>
 				<a
 					href={url}
 					target="_blank"
 					rel="noreferrer"
-					className="card-zoom relative flex aspect-video items-center justify-center rounded-b-xl rounded-t-xl drop-shadow-2xl lg:h-auto lg:w-full">
+					className="card-zoom relative flex aspect-video w-full items-center justify-center rounded-b-xl rounded-t-xl drop-shadow-2xl lg:h-auto lg:w-full">
 					<img
 						src={obj}
 						alt={title}
 						className="card-zoom-img absolute -z-10 h-full w-full transform drop-shadow-sm transition-all duration-[350ms] ease-in-out"
 						style={{ pointerEvents: 'none' }}
 					/>
-					<div className="absolute bg-black opacity-25" />
-					<div className="card-zoom-text absolute flex flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:rounded-2xl">
+					<div className="absolute bg-black opacity-25 md:w-2/3" />
+					<div className="card-zoom-text absolute flex w-[90%] flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:w-2/3 md:rounded-2xl">
 						<h1 className="text-xl font-bold text-white md:text-4xl">
 							{title}
 						</h1>
@@ -43,7 +49,11 @@ class ProjectCards extends Component {
 							<p>{role}</p>
 						</div>
 					</div>
-					<BsArrowUpRightSquare className="card-zoom-icon absolute bottom-0 right-0 m-2 scale-100 transform text-4xl text-neutral-50 opacity-80 transition-all duration-500 ease-in-out md:m-4 md:text-5xl" />
+					<BsArrowUpRightSquare
+						className={`card-zoom-icon absolute bottom-0 right-0 m-2 scale-100 transform text-4xl  opacity-80 drop-shadow-lg transition-all duration-500 ease-in-out md:m-4 md:text-5xl ${
+							!white ? 'text-neutral-50' : 'text-neutral-800'
+						}`}
+					/>
 				</a>
 			</div>
 		);
@@ -54,20 +64,25 @@ class Projects extends Component {
 	render() {
 		return (
 			<section
-				className="mx-auto flex w-full max-w-[85%] flex-col items-center justify-center gap-y-10 pt-[4.75rem] xl:grid xl:grid-cols-2 xl:gap-x-10 xl:pt-[5.75rem]"
+				className="mx-auto flex h-full w-[85%] flex-col items-center justify-center gap-y-10 pt-[4.75rem] lg:grid lg:grid-cols-2 lg:gap-x-10 lg:pt-[8.75rem]"
 				id="work">
 				<ProjectCards
 					title="ElitLabs"
-					desc="An online tutoring class for introduction to Python."
+					desc="An on-demand course platform for learning to code."
 					tech={
 						<>
-							<SiNextdotjs className="inline-block rounded-[200%] bg-white text-[#000000] text-clip" />
+							<SiNextdotjs className="inline-block text-clip rounded-[200%] bg-white text-[#000000]" />
+							<span className="font-bold">{' | '}</span>
+							<SiReact className="inline-block text-[#61DAFB]" />
+							<span className="font-bold">{' | '}</span>
+							<SiPlanetscale className="inline-block text-[#000000]" />
 							<span className="font-bold">{' | '}</span>
 							<SiTailwindcss className="inline-block text-[#06B6D4]" />
 						</>
 					}
 					url="https://elitlabs.com"
 					obj={elitlabs}
+					white
 				/>
 				<ProjectCards
 					title="l0n3ly.com"
@@ -79,7 +94,7 @@ class Projects extends Component {
 							<SiTailwindcss className="inline-block text-[#06B6D4]" />
 						</>
 					}
-					url="https://l0n3ly.com"
+					url="https://l0n3ly-portfolio.vercel.app/"
 					obj={l0n3ly}
 				/>
 				<ProjectCards
@@ -98,7 +113,7 @@ class Projects extends Component {
 					obj={polsu}
 				/>
 				<ProjectCards
-					title="Quiz"
+					title="Geography Quiz"
 					desc="A simple quiz game for learning country flags and capitals."
 					tech={
 						<>

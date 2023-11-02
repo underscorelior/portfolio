@@ -70,8 +70,12 @@ function App() {
 				variants={menuVariants}
 				animate={isOpen ? 'opened' : 'closed'}>
 				<motion.ul className="fixed top-[30vh] flex list-none flex-col items-center justify-center gap-y-6 text-2xl font-semibold text-neutral-900">
-					<MotionLink variants={linkVariants}>About</MotionLink>
-					<MotionLink variants={linkVariants}>Contact</MotionLink>
+					<MotionHash variants={linkVariants} smooth to="/#about">
+						About
+					</MotionHash>
+					<MotionLink variants={linkVariants} smooth to="/#contact">
+						Contact
+					</MotionLink>
 					<MotionHash
 						className="rounded-lg bg-neutral-800 p-4 text-white"
 						variants={linkVariants}
