@@ -14,17 +14,17 @@ class About extends Component {
 		return (
 			<div
 				id="about"
-				className="mx-auto flex w-[80%] flex-col items-center justify-center pt-28 ">
+				className="mx-auto flex w-[85%] lg:w-[80%] flex-col items-center justify-center pt-28 ">
 				<h1 className="text-5xl font-black">About</h1>
 
-				<div className="grid grid-cols-[25%,75%]">
+				<div className="pt-8 lg:pt-4 flex flex-col lg:grid lg:grid-cols-[25%,75%]">
 					<img
 						src={me}
 						alt="Picture of me"
-						className="my-auto -ml-[12.5%] aspect-square h-auto w-[95%] rounded-xl"
+						className="my-auto lg:-ml-[12.5%] aspect-square h-auto w-[45%] lg:w-[95%] rounded-xl"
 					/>
 					<p className="tracking pt-4 text-2xl font-medium">
-						I'm a high school junior based in the United States who loves to
+						Hey! I'm a high school junior based in the United States who loves to
 						work on new projects and learn new technologies. I have experience
 						in many areas of development, including:
 						<span className="inline-block ml-2 mr-3">

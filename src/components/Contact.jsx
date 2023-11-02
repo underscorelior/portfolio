@@ -4,7 +4,7 @@ import { SiDiscord } from 'react-icons/si';
 class Contact extends Component {
 	render() {
 		return (
-			<div id="contact" className="mx-auto flex w-[80%] flex-col pb-6 pt-32">
+			<div id="contact" className="mx-auto flex w-[85%] lg:w-[80%] flex-col pb-6 pt-32">
 				<h1 className="text-center text-5xl font-black">Contact</h1>
 				<p className="tracking pt-4 text-2xl font-medium">
 					You can contact me at{' '}

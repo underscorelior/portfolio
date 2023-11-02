@@ -64,7 +64,7 @@ class Projects extends Component {
 	render() {
 		return (
 			<section
-				className="mx-auto flex h-full w-[85%] flex-col items-center justify-center gap-y-10 pt-[4.75rem] lg:grid lg:grid-cols-2 lg:gap-x-10 lg:pt-[8.75rem]"
+				className="mx-auto flex h-full lg:w-[85%] flex-col items-center justify-center gap-y-10 pt-[4.75rem] lg:grid lg:grid-cols-2 lg:gap-x-10 lg:pt-[8.75rem]"
 				id="work">
 				<ProjectCards
 					title="ElitLabs"
