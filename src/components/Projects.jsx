@@ -127,7 +127,7 @@ class Projects extends Component {
 							{/* <SiPlanetscale className="inline-block text-red-500" /> */}
 						</>
 					}
-					url="https://quiz.underscore.wtf/"
+					url="https://quiz.underscore.wtf/flags/world"
 					obj={quiz}
 				/>
 			</section>
