@@ -52,7 +52,7 @@ class Footer extends Component {
 								rel="noopener noreferrer">
 								<SiGmail color="#EA4335" size={32} />
 							</a>
-							<a 
+							<a
 								href="https://www.linkedin.com/in/liorpendler/"
 								target="_blank"
 								rel="noopener noreferrer">
