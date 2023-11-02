@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { FiPlus } from 'react-icons/fi';
 
-function App() {
+function MobileNav() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const MotionLink = motion(Link);
@@ -90,4 +90,4 @@ function App() {
 	);
 }
 
-export default App;
+export default MobileNav;
