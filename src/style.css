@@ -42,3 +42,6 @@
 .card-zoom:hover .card-zoom-text {
 	background-color: rgb(23 23 23 / 0.8);
 }
+html {
+	scroll-behavior: smooth;
+}

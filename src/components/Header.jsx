@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import header from '../assets/header.json';
-import { HashLink } from 'react-router-hash-link';
 import { SiDiscord, SiGithub, SiGmail } from 'react-icons/si';
 class Header extends Component {
 	render() {
@@ -21,12 +20,11 @@ class Header extends Component {
 						</span>
 					</div>
 					<div className="mt-8 flex w-full flex-col items-center gap-x-6 gap-y-4 md:flex-row">
-						<HashLink
-							to="/#work"
-							smooth
+						<a
+							href="/#work"
 							className="flex w-full items-center justify-center rounded-2xl border-2 bg-neutral-800 p-7 px-8 text-center text-2xl font-semibold text-neutral-100 duration-300 hover:bg-neutral-900 md:max-w-[50%] md:p-6 xl:max-w-[20%]">
 							View Work
-						</HashLink>
+						</a>
 						<section className="flex w-full flex-row justify-between gap-x-4 md:justify-start md:gap-x-6">
 							<a
 								href="https://github.com/underscorelior"

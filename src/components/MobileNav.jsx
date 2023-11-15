@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import { FiPlus } from 'react-icons/fi';
 
 function MobileNav() {
 	const [isOpen, setIsOpen] = useState(false);
 
-	const MotionLink = motion(Link);
-	const MotionHash = motion(HashLink);
+	const MotionHash = motion.a;
 
 	function toggleNav() {
 		setIsOpen(!isOpen);
@@ -55,8 +52,7 @@ function MobileNav() {
 		<>
 			<header className="sticky top-0 z-50 flex w-full min-w-full flex-row items-center justify-between border-b-2 border-neutral-300/20 bg-white bg-opacity-10 px-[5%] py-[0.5rem] backdrop-blur-lg backdrop-filter md:hidden">
 				<MotionHash
-					to="/#"
-					smooth
+					href="/#"
 					className="text-[2.125rem] font-semibold text-neutral-900"
 					onClick={() => (isOpen ? toggleNav() : null)}>
 					Lior
@@ -79,23 +75,20 @@ function MobileNav() {
 					<MotionHash
 						onClick={() => toggleNav()}
 						variants={linkVariants}
-						smooth
-						to="/#about">
+						href="/#about">
 						About
 					</MotionHash>
-					<MotionLink
+					<MotionHash
 						onClick={() => toggleNav()}
 						variants={linkVariants}
-						smooth
-						to="/#contact">
+						href="/#contact">
 						Contact
-					</MotionLink>
+					</MotionHash>
 					<MotionHash
 						className="rounded-lg bg-neutral-800 p-4 text-white"
 						variants={linkVariants}
-						to="/#work"
-						onClick={() => toggleNav()}
-						smooth>
+						href="/#work"
+						onClick={() => toggleNav()}>
 						View Work
 					</MotionHash>
 				</motion.ul>
