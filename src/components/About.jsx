@@ -14,36 +14,36 @@ class About extends Component {
 		return (
 			<div
 				id="about"
-				className="mx-auto flex w-[85%] lg:w-[80%] flex-col items-center justify-center pt-28 ">
+				className="mx-auto flex w-[85%] flex-col items-center justify-center pt-28 lg:w-[80%] ">
 				<h1 className="text-5xl font-black">About</h1>
 
-				<div className="pt-8 lg:pt-4 flex flex-col lg:grid lg:grid-cols-[25%,75%]">
+				<div className="flex flex-col pt-8 lg:grid lg:grid-cols-[25%,75%] lg:pt-4">
 					<img
 						src={me}
 						alt="Picture of me"
-						className="my-auto lg:-ml-[12.5%] aspect-square h-auto w-[45%] lg:w-[95%] rounded-xl"
+						className="my-auto aspect-square h-auto w-[45%] rounded-xl lg:-ml-[12.5%] lg:w-[95%]"
 					/>
 					<p className="tracking pt-4 text-2xl font-medium">
-						Hey! I'm a high school junior based in the United States who loves to
-						work on new projects and learn new technologies. I have experience
-						in many areas of development, including:
-						<span className="inline-block ml-2 mr-3">
+						Hey! I'm a high school junior based in the United States who loves
+						to work on new projects and learn new technologies. I have
+						experience in many areas of development, including:
+						<span className="ml-2 mr-3 inline-block">
 							<SiPython className="mr-1 inline-block text-2xl text-[#3776AB]" />{' '}
 							Python,{' '}
 						</span>
-						<span className="inline-block mr-2">
+						<span className="mr-2 inline-block">
 							<SiJavascript className="inline-block text-2xl text-[#F7DF1E]" />{' '}
 							JavaScript,{' '}
 						</span>
-						<span className="inline-block mr-2">
+						<span className="mr-2 inline-block">
 							<SiReact className="inline-block text-2xl text-[#61DAFB]" />{' '}
 							React,{' '}
 						</span>
-						<span className="inline-block mr-2">
+						<span className="mr-2 inline-block">
 							<SiNextdotjs className="inline-block text-2xl text-[#000000]" />{' '}
 							Next.js,{' '}
 						</span>
-						<span className="inline-block mr-2">
+						<span className="mr-2 inline-block">
 							<SiTailwindcss className="inline-block text-2xl text-[#38B2AC]" />{' '}
 							TailwindCSS,{' '}
 						</span>

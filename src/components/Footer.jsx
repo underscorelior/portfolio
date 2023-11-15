@@ -37,25 +37,33 @@ class Footer extends Component {
 							<a
 								href="https://github.com/underscorelior"
 								target="_blank"
-								rel="noopener noreferrer">
+								rel="noopener noreferrer"									
+								aria-label="github"
+								>
 								<SiGithub color="#181717" size={32} />
 							</a>
 							<a
 								href="https://discordapp.com/users/454356237614841870"
 								target="_blank"
-								rel="noopener noreferrer">
+								rel="noopener noreferrer"
+								aria-label="discord"
+								>
 								<SiDiscord color="#5865F2" size={32} />
 							</a>
 							<a
 								href="mailto:lior@underscore.wtf"
 								target="_blank"
-								rel="noopener noreferrer">
+								rel="noopener noreferrer"
+								aria-label="email"
+								>
 								<SiGmail color="#EA4335" size={32} />
 							</a>
 							<a
 								href="https://www.linkedin.com/in/liorpendler/"
 								target="_blank"
-								rel="noopener noreferrer">
+								rel="noopener noreferrer"
+								aria-label="linkedin"
+								>
 								<SiLinkedin color="#0077B5" size={32} />
 							</a>
 						</div>

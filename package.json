@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.13",
     "@vercel/analytics": "^1.1.1",
+    "cjs": "^0.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "simple-icons": "^9.11.0",

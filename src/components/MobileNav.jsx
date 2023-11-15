@@ -54,7 +54,13 @@ function MobileNav() {
 	return (
 		<>
 			<header className="sticky top-0 z-50 flex w-full min-w-full flex-row items-center justify-between border-b-2 border-neutral-300/20 bg-white bg-opacity-10 px-[5%] py-[0.5rem] backdrop-blur-lg backdrop-filter md:hidden">
-				<MotionHash to="/#" smooth className="text-[2.125rem] font-semibold text-neutral-900" onClick={() => isOpen?toggleNav():null}>Lior</MotionHash>
+				<MotionHash
+					to="/#"
+					smooth
+					className="text-[2.125rem] font-semibold text-neutral-900"
+					onClick={() => (isOpen ? toggleNav() : null)}>
+					Lior
+				</MotionHash>
 				<motion.div
 					variants={iconVariants}
 					animate={isOpen ? 'opened' : 'closed'}
@@ -70,10 +76,18 @@ function MobileNav() {
 				variants={menuVariants}
 				animate={isOpen ? 'opened' : 'closed'}>
 				<motion.ul className="fixed top-[30vh] flex list-none flex-col items-center justify-center gap-y-6 text-2xl font-semibold text-neutral-900">
-					<MotionHash onClick={() => toggleNav()} variants={linkVariants} smooth to="/#about">
+					<MotionHash
+						onClick={() => toggleNav()}
+						variants={linkVariants}
+						smooth
+						to="/#about">
 						About
 					</MotionHash>
-					<MotionLink onClick={() => toggleNav()} variants={linkVariants} smooth to="/#contact">
+					<MotionLink
+						onClick={() => toggleNav()}
+						variants={linkVariants}
+						smooth
+						to="/#contact">
 						Contact
 					</MotionLink>
 					<MotionHash
