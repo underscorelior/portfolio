@@ -7,10 +7,10 @@ import {
 	SiReact,
 	SiTailwindcss,
 } from 'react-icons/si';
-import elitlabs from '../assets/elitlabs.png';
-import l0n3ly from '../assets/l0n3ly.png';
-import polsu from '../assets/polsu.png';
-import quiz from '../assets/quiz.png';
+import elitlabs from '../assets/elitlabs.webp';
+import l0n3ly from '../assets/l0n3ly.webp';
+import polsu from '../assets/polsu.webp';
+import quiz from '../assets/quiz.webp';
 
 class ProjectCards extends Component {
 	render() {

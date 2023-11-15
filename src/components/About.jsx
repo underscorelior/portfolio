@@ -7,7 +7,7 @@ import {
 	SiTailwindcss,
 } from 'react-icons/si';
 import { FaDatabase } from 'react-icons/fa';
-import me from '../assets/me.png';
+import me from '../assets/me.webp';
 
 class About extends Component {
 	render() {
