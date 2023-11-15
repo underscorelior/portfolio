@@ -32,7 +32,6 @@ class ProjectCards extends Component {
 						alt={title}
 						className="card-zoom-img absolute -z-10 h-full w-full transform drop-shadow-sm transition-all duration-[350ms] ease-in-out"
 						style={{ pointerEvents: 'none' }}
-						width={250} height={250}
 					/>
 					<div className="absolute bg-black opacity-25 md:w-2/3" />
 					<div className="card-zoom-text absolute flex w-[90%] flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:w-2/3 md:rounded-2xl">
