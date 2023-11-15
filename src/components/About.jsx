@@ -22,6 +22,8 @@ class About extends Component {
 						src={me}
 						alt="Picture of me"
 						className="my-auto aspect-square h-auto w-[45%] rounded-xl lg:-ml-[12.5%] lg:w-[95%]"
+						height={"full"}
+						width={"full"}
 					/>
 					<p className="tracking pt-4 text-2xl font-medium">
 						Hey! I'm a high school junior based in the United States who loves
