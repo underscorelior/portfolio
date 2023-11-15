@@ -32,8 +32,6 @@
     "prettier-plugin-tailwindcss": "^0.5.6",
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.8.0",
-    "react-router-dom": "^6.9.0",
-    "react-router-hash-link": "^2.4.3",
     "styled-components": "^5.3.3",
     "tailwindcss": "^3.2.7",
     "vite": "^4.2.0"
