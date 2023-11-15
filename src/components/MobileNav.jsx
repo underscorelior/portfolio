@@ -71,7 +71,7 @@ function MobileNav() {
 				initial={false}
 				variants={menuVariants}
 				animate={isOpen ? 'opened' : 'closed'}>
-				<motion.ul className="fixed top-[30vh] flex list-none flex-col items-center justify-center gap-y-6 text-2xl font-semibold text-neutral-900">
+				<motion.div className="fixed top-[30vh] flex list-none flex-col items-center justify-center gap-y-6 text-2xl font-semibold text-neutral-900">
 					<MotionHash
 						onClick={() => toggleNav()}
 						variants={linkVariants}
@@ -91,7 +91,7 @@ function MobileNav() {
 						onClick={() => toggleNav()}>
 						View Work
 					</MotionHash>
-				</motion.ul>
+				</motion.div>
 			</motion.nav>
 		</>
 	);
