@@ -4,6 +4,9 @@
 
 @layer base {
 	/* for elements */
+	html {
+		@apply scroll-smooth bg-neutral-100
+	}
 }
 
 @layer components {
@@ -39,9 +42,7 @@
 		scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	opacity: 1;
 }
+
 .card-zoom:hover .card-zoom-text {
 	background-color: rgb(23 23 23 / 0.8);
-}
-html {
-	scroll-behavior: smooth;
 }
