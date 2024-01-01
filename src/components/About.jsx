@@ -17,16 +17,16 @@ class About extends Component {
 				className="mx-auto flex w-[85%] flex-col items-center justify-center pt-28 lg:w-[80%] ">
 				<h1 className="text-5xl font-black">About</h1>
 
-				<div className="flex flex-col pt-8 lg:grid lg:grid-cols-[25%,75%] lg:pt-4">
+				<div className="flex flex-col pt-8 lg:grid lg:grid-cols-[25%,5%,70%] lg:pt-4 items-center justify-center">
 					<img
 						src={me}
 						alt="Picture of me"
-						className="my-auto aspect-square h-auto w-[45%] rounded-xl lg:-ml-[12.5%] lg:w-[95%]"
+						className="my-auto aspect-square h-auto w-[45%] rounded-xl lg:w-[95%]"
 						height={'full'}
 						width={'full'}
 					/>
-					<p className="tracking pt-4 text-2xl font-medium">
-						Hey! I'm a high school junior based in the United States who loves
+					<p className="tracking pt-4 text-2xl font-medium self-center col-start-3">
+						I'm a high school junior based in the United States who loves
 						to work on new projects and learn new technologies. I have
 						experience in many areas of development, including:
 						<span className="ml-2 mr-3 inline-block">
