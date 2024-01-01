@@ -22,8 +22,8 @@ class About extends Component {
 						src={me}
 						alt="Picture of me"
 						className="my-auto aspect-square h-auto w-[45%] rounded-xl lg:-ml-[12.5%] lg:w-[95%]"
-						height={"full"}
-						width={"full"}
+						height={'full'}
+						width={'full'}
 					/>
 					<p className="tracking pt-4 text-2xl font-medium">
 						Hey! I'm a high school junior based in the United States who loves
@@ -60,15 +60,8 @@ class About extends Component {
 							className="text-slate-700 underline">
 							ElitLabs
 						</a>
-						, an online course platform to help others learn in a better way,
-						and on{' '}
-						<a
-							href="https://quiz.underscore.wtf"
-							target="_blank"
-							className="text-slate-700 underline">
-							Geography Quiz
-						</a>
-						, to test your geography knowlege.
+						, a nonprofit organization dedicated to delivering quality and
+						affordable programming classes for underserved students.
 					</p>
 				</div>
 			</div>
