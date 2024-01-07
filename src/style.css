@@ -5,7 +5,7 @@
 @layer base {
 	/* for elements */
 	html {
-		@apply scroll-smooth bg-neutral-100
+		@apply scroll-smooth bg-neutral-100;
 	}
 }
 
