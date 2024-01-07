@@ -6,7 +6,7 @@ class Contact extends Component {
 		return (
 			<div
 				id="contact"
-				className="mx-auto flex w-[85%] flex-col pb-6 pt-32 lg:w-[80%]">
+				className="mx-auto flex w-[85%] flex-col pb-6 pt-32 lg:w-[80%] 4xl:w-[65%]">
 				<h1 className="text-center text-5xl font-black">Contact</h1>
 				<p className="tracking pt-4 text-2xl font-medium">
 					You can contact me at{' '}
