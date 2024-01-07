@@ -14,10 +14,10 @@ class About extends Component {
 		return (
 			<div
 				id="about"
-				className="mx-auto flex w-[85%] flex-col items-center justify-center pt-28 lg:w-[80%] ">
+				className="mx-auto flex w-[85%] flex-col items-center justify-center pt-28 lg:w-[80%] 4xl:w-[65%]">
 				<h1 className="text-5xl font-black">About</h1>
 
-				<div className="flex flex-col items-center justify-center pt-8 lg:grid lg:grid-cols-[25%,5%,70%] 4xl:grid-cols-[15%,2.5%,82.5%] lg:pt-4">
+				<div className="flex flex-col items-center justify-center pt-8 lg:grid lg:grid-cols-[25%,5%,70%] lg:pt-4 4xl:grid-cols-[15%,2.5%,82.5%]">
 					<img
 						src={me}
 						alt="Picture of me"
