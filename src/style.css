@@ -46,3 +46,11 @@
 .card-zoom:hover .card-zoom-text {
 	background-color: rgb(23 23 23 / 0.8);
 }
+
+.tooltip {
+	@apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+	@apply visible z-50;
+}
