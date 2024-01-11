@@ -119,24 +119,6 @@ class Projects extends Component {
 					url="https://polsu.xyz"
 					obj={polsu}
 				/>
-				{/* <ProjectCards
-					title="Geography Quiz"
-					desc="A simple quiz game for learning country flags and capitals."
-					tech={
-						<div className="flex flex-row items-center gap-x-2">
-							<SiNextdotjs className="inline-block rounded-[200%] bg-white text-[#000000]" />
-							<span className="font-bold">{' | '}</span>
-							<div class="has-tooltip flex items-center justify-center">
-								<span class="tooltip -mt-16 rounded border border-neutral-900 bg-neutral-400 p-1 text-neutral-900 opacity-95 shadow-lg drop-shadow">
-									TailwindCSS
-								</span>
-								<SiTailwindcss className="inline-block text-[#06B6D4]" />
-							</div>
-						</div>
-					}
-					url="https://quiz.underscore.wtf/flags/world"
-					obj={quiz}
-				/> */}
 				<ProjectCards
 					title="Geography Quiz"
 					desc="A simple quiz game for learning country flags and capitals."
