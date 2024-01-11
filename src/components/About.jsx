@@ -6,7 +6,7 @@ import {
 	SiNextdotjs,
 	SiTailwindcss,
 } from 'react-icons/si';
-import { FaDatabase } from 'react-icons/fa';
+import { FaDatabase, FaJava } from 'react-icons/fa';
 import me from '../assets/me.webp';
 
 class About extends Component {
@@ -26,7 +26,7 @@ class About extends Component {
 						width={'full'}
 					/>
 					<p className="tracking col-start-3 self-center pt-4 text-2xl font-medium">
-						I'm a high school junior based in the United States who loves to
+						Hey! I'm Lior Pendler, a high school junior based in the United States who loves to
 						work on new projects and learn new technologies. I have experience
 						in many areas of development, including:
 						<span className="ml-2 mr-3 inline-block">
@@ -36,6 +36,10 @@ class About extends Component {
 						<span className="mr-2 inline-block">
 							<SiJavascript className="inline-block text-2xl text-[#F7DF1E]" />{' '}
 							JavaScript,{' '}
+						</span>
+						<span className="mr-2 inline-block">
+							<FaJava className="inline-block text-2xl text-[#5382a1]" />{' '}
+							Java,{' '}
 						</span>
 						<span className="mr-2 inline-block">
 							<SiReact className="inline-block text-2xl text-[#61DAFB]" />{' '}
