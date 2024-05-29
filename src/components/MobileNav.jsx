@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiPlus } from 'react-icons/fi';
 
-function MobileNav() {
+export default function MobileNav() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const MotionHash = motion.a;
@@ -96,5 +96,3 @@ function MobileNav() {
 		</>
 	);
 }
-
-export default MobileNav;
