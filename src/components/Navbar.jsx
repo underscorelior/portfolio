@@ -10,7 +10,7 @@ export default function Navbar() {
 					<a href="/#contact">Contact</a>
 					<a
 						href="/#work"
-						className="rounded-2xl bg-neutral-900 p-4 text-neutral-100">
+						className="rounded-xl bg-neutral-900 p-4 text-neutral-100">
 						View Work
 					</a>
 				</div>

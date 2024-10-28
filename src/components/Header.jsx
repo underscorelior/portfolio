@@ -21,7 +21,7 @@ export default function Header() {
 				<div className="mt-8 flex w-full flex-col items-center gap-x-6 gap-y-4 md:flex-row">
 					<a
 						href="/#work"
-						className="flex w-full items-center justify-center rounded-2xl border-2 bg-neutral-800 p-7 px-8 text-center text-2xl font-semibold text-neutral-100 duration-300 hover:bg-neutral-900 md:max-w-[50%] md:p-6 xl:max-w-[20%]">
+						className="flex w-full items-center justify-center rounded-xl border-2 bg-neutral-800 p-7 px-8 text-center text-2xl font-semibold text-neutral-100 duration-300 hover:bg-neutral-900 md:max-w-[50%] md:p-[1.125rem] xl:max-w-[20%]">
 						View Work
 					</a>
 					<section className="flex w-full flex-row justify-between gap-x-4 md:justify-start md:gap-x-6">
@@ -30,7 +30,7 @@ export default function Header() {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="github"
-							className="w-auto rounded-2xl border-2 bg-[#313030] p-[1.64rem] text-4xl text-white duration-300 hover:bg-[#181717] md:p-5">
+							className="w-auto rounded-xl border-2 bg-[#313030] p-[1.64rem] text-4xl text-white duration-300 hover:bg-[#181717] md:p-[1.125rem] md:text-3xl">
 							<SiGithub />
 						</a>
 						<a
@@ -38,7 +38,7 @@ export default function Header() {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="email address"
-							className="w-auto rounded-2xl border-2 bg-[#EA4335] p-[1.64rem] text-4xl text-white duration-300 hover:bg-[#d93729] md:p-5">
+							className="w-auto rounded-xl border-2 bg-[#EA4335] p-[1rem] text-4xl text-white duration-300 hover:bg-[#d93729] md:p-[1.125rem] md:text-3xl">
 							<SiGmail />
 						</a>
 						<a
@@ -46,7 +46,7 @@ export default function Header() {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="discord"
-							className="w-auto rounded-2xl border-2 bg-[#5865F2] p-[1.64rem] text-4xl text-white duration-300 hover:bg-[#4445e7] md:p-5">
+							className="w-auto rounded-xl border-2 bg-[#5865F2] p-[1.64rem] text-4xl text-white duration-300 hover:bg-[#4445e7] md:p-[1.125rem] md:text-3xl">
 							<SiDiscord />
 						</a>
 					</section>

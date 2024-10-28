@@ -1,4 +1,4 @@
-import { SiGithub, SiDiscord, SiGmail, SiLinkedin } from 'react-icons/si';
+import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si';
 
 export default function Footer() {
 	return (
@@ -30,14 +30,7 @@ export default function Footer() {
 							rel="noopener noreferrer"
 							aria-label="github">
 							<SiGithub color="#181717" size={32} />
-						</a>
-						<a
-							href="https://discordapp.com/users/454356237614841870"
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="discord">
-							<SiDiscord color="#5865F2" size={32} />
-						</a>
+						</a>	
 						<a
 							href="mailto:lior@underscore.wtf"
 							target="_blank"

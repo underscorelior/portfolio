@@ -2,6 +2,7 @@
 
 import {
 	SiJavascript,
+	SiTypescript,
 	SiPython,
 	SiReact,
 	SiNextdotjs,
@@ -26,8 +27,8 @@ export default function About() {
 					width={'full'}
 				/>
 				<p className="tracking col-start-3 self-center pt-4 text-2xl font-medium">
-					Hey! I'm Lior Pendler, a high school junior based in the United States
-					who loves to work on new projects and learn new technologies. I have
+					Hey! I'm Lior Pendler, a high school senior based in the United States. 
+					I love to work on projects and learn new technologies. I have
 					experience in many areas of development, including:
 					<span className="ml-2 mr-3 inline-block">
 						<SiPython className="mr-1 inline-block text-2xl text-[#3776AB]" />{' '}
@@ -36,6 +37,10 @@ export default function About() {
 					<span className="mr-2 inline-block">
 						<SiJavascript className="inline-block text-2xl text-[#F7DF1E]" />{' '}
 						JavaScript,{' '}
+					</span>
+					<span className="mr-2 inline-block">
+						<SiTypescript className="inline-block text-2xl text-[#3178C6]" />{' '}
+						TypeScript,{' '}
 					</span>
 					<span className="mr-2 inline-block">
 						<FaJava className="inline-block text-2xl text-[#5382a1]" /> Java,{' '}

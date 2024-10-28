@@ -19,7 +19,7 @@ export default function Contact() {
 					href="https://discordapp.com/users/454356237614841870"
 					target="_blank"
 					className="text-slate-700 underline">
-					<SiDiscord className="inline-block text-2xl text-[#5865F2]" /> Discord
+					<SiDiscord className="inline-block text-2xl text-[#5865F2]" /> Discord (underscorelior)
 				</a>
 				.
 			</p>

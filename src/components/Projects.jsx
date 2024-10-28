@@ -9,20 +9,17 @@ import {
 	SiTailwindcss,
 } from 'react-icons/si';
 import elitlabs from '../assets/projects/elitlabs.webp';
-import homepage from '../assets/projects/homepage.webp';
+import homepage from '../assets/projects/new_homepage.webp';
 import l0n3ly from '../assets/projects/l0n3ly.webp';
 import polsu from '../assets/projects/polsu.webp';
-import quiz from '../assets/projects/quiz.webp';
+import quiz from '../assets/projects/new_quiz.webp';
 import borderdle from '../assets/projects/borderdle.webp';
 
 function ProjectCards({title, desc, tech, techNames, role, url, obj, centered = false, white = false}) {
-		// const { title, desc, tech, techNames, role, url, obj, centered, white } =
-		// 	this.props;
-
 		return (
 			<div
 				className={
-					'mx-auto flex h-auto w-[90%] items-center justify-center overflow-hidden rounded-xl drop-shadow-xl md:w-2/3 lg:w-[90%] 2xl:w-full 4xl:w-[75%]' +
+					'mx-auto flex h-auto w-[90%] items-center justify-center overflow-hidden rounded-lg drop-shadow-xl md:w-2/3 lg:w-[90%] 2xl:w-full 4xl:w-[75%]' +
 					(centered
 						? ' md:col-span-2 md:max-w-[calc(50%-1.25rem)] 4xl:max-w-[calc(37.5%-1.25rem)]'
 						: '')
@@ -31,7 +28,7 @@ function ProjectCards({title, desc, tech, techNames, role, url, obj, centered = 
 					href={url}
 					target="_blank"
 					rel="noreferrer"
-					className="card-zoom relative flex aspect-video w-full items-center justify-center rounded-b-xl rounded-t-xl drop-shadow-2xl lg:h-auto lg:w-full">
+					className="card-zoom relative flex aspect-video w-full items-center justify-center rounded-b-lg rounded-t-lg drop-shadow-2xl lg:h-auto lg:w-full">
 					<img
 						src={obj}
 						alt={title}
@@ -39,7 +36,7 @@ function ProjectCards({title, desc, tech, techNames, role, url, obj, centered = 
 						style={{ pointerEvents: 'none' }}
 					/>
 					<div className="absolute bg-black opacity-25 md:w-2/3" />
-					<div className="card-zoom-text absolute flex w-[90%] flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:w-2/3 md:rounded-2xl">
+					<div className="card-zoom-text absolute flex w-[90%] flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:w-2/3 md:rounded-lg">
 						<h1 className="text-xl font-bold text-white md:text-4xl">
 							{title}
 						</h1>
@@ -100,7 +97,7 @@ export default function Projects() {
 				/>
 				<ProjectCards
 					title="Homepage"
-					desc="My browser new tab page. Has spotify stats, weather/time, and a countdown to specific dates."
+					desc="A highly customizable new tab page with Spotify controls, countdowns, a settings menu, and an easy to use syncing system."
 					tech={[
 						<SiReact className="inline-block text-[#61DAFB]" />,
 						<SiTailwindcss className="inline-block text-[#06B6D4]" />,
@@ -109,6 +106,41 @@ export default function Projects() {
 					techNames={['React', 'TailwindCSS', 'Spotify API']}
 					url="https://home.underscore.wtf"
 					obj={homepage}
+				/>
+								<ProjectCards
+					title="Quiz"
+					desc="A platform that allows for easy creation of web games, currently WIP."
+					tech={[
+						<SiNextdotjs className="inline-block rounded-[200%] bg-white text-[#000000]" />,
+						<SiTailwindcss className="inline-block text-[#06B6D4]" />,
+					]}
+					techNames={['Next.js', 'TailwindCSS']}
+					url="https://quiz.underscore.wtf/"
+					obj={quiz}
+					white
+				/>
+				<ProjectCards
+					title="Borderdle"
+					desc={
+						<>
+							Wordle type game, except a country's border is revealed with each
+							guess. Project was made in collaboration with{' '}
+							<a
+								className="font-semibold text-slate-200 underline"
+								href="https://lukeskyrock.com">
+								Luke Wang
+							</a>
+							.
+						</>
+					}
+					tech={[
+						<SiReact className="inline-block text-[#61DAFB]" />,
+						<SiTailwindcss className="inline-block text-[#06B6D4]" />,
+						<SiPython className="inline-block text-[#3776AB]" />,
+					]}
+					techNames={['React', 'TailwindCSS', 'Python']}
+					url="https://borderdle.lukeskyrock.com"
+					obj={borderdle}
 				/>
 				<ProjectCards
 					title="l0n3ly.com"
@@ -132,40 +164,6 @@ export default function Projects() {
 					techNames={['Python', 'React', 'TailwindCSS']}
 					url="https://polsu.xyz"
 					obj={polsu}
-				/>
-				<ProjectCards
-					title="Geography Quiz"
-					desc="A simple quiz game for learning country flags and capitals."
-					tech={[
-						<SiNextdotjs className="inline-block rounded-[200%] bg-white text-[#000000]" />,
-						<SiTailwindcss className="inline-block text-[#06B6D4]" />,
-					]}
-					techNames={['Next.js', 'TailwindCSS']}
-					url="https://quiz.underscore.wtf/flags/world"
-					obj={quiz}
-				/>
-				<ProjectCards
-					title="Borderdle"
-					desc={
-						<>
-							Wordle type game, except a country's border is revealed with each
-							guess. Project was made with{' '}
-							<a
-								className="font-semibold text-slate-200 underline"
-								href="https://lukeskyrock.com">
-								Luke Wang
-							</a>
-							.
-						</>
-					}
-					tech={[
-						<SiReact className="inline-block text-[#61DAFB]" />,
-						<SiTailwindcss className="inline-block text-[#06B6D4]" />,
-						<SiPython className="inline-block text-[#3776AB]" />,
-					]}
-					techNames={['React', 'TailwindCSS', 'Python']}
-					url="https://borderdle.lukeskyrock.com"
-					obj={borderdle}
 				/>
 			</section>
 		);
