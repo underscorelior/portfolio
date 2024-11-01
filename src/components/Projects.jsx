@@ -104,7 +104,7 @@ export default function Projects() {
 						<SiSpotify className="inline-block text-[#1DB954]" />,
 					]}
 					techNames={['React', 'TailwindCSS', 'Spotify API']}
-					url="https://home.underscore.wtf"
+					url="https://home.underscorelior.dev"
 					obj={homepage}
 				/>
 								<ProjectCards
@@ -115,7 +115,7 @@ export default function Projects() {
 						<SiTailwindcss className="inline-block text-[#06B6D4]" />,
 					]}
 					techNames={['Next.js', 'TailwindCSS']}
-					url="https://quiz.underscore.wtf/"
+					url="https://quiz.underscorelior.dev/"
 					obj={quiz}
 					white
 				/>
