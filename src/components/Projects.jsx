@@ -1,19 +1,20 @@
-// TODO: Fix weird sizing of borderdle
-
 import { BsArrowUpRightSquare } from 'react-icons/bs';
 import {
 	SiNextdotjs,
 	SiPython,
 	SiReact,
 	SiSpotify,
+	SiSqlite,
 	SiTailwindcss,
+	SiTypescript,
 } from 'react-icons/si';
 import elitlabs from '../assets/projects/elitlabs.webp';
-import homepage from '../assets/projects/new_homepage.webp';
+import homepage from '../assets/projects/homepage.webp';
 import l0n3ly from '../assets/projects/l0n3ly.webp';
 import polsu from '../assets/projects/polsu.webp';
 import quiz from '../assets/projects/new_quiz.webp';
 import borderdle from '../assets/projects/borderdle.webp';
+import collegesearch from '../assets/projects/collegesearch.webp'
 
 function ProjectCards({title, desc, tech, techNames, role, url, obj, centered = false, white = false}) {
 		return (
@@ -37,11 +38,11 @@ function ProjectCards({title, desc, tech, techNames, role, url, obj, centered = 
 					/>
 					<div className="absolute bg-black opacity-25 md:w-2/3" />
 					<div className="card-zoom-text absolute flex w-[90%] flex-col items-center justify-center rounded-xl bg-neutral-900/60 p-4 shadow-2xl transition-all duration-[350ms] md:w-2/3 md:rounded-lg">
-						<h1 className="text-xl font-bold text-white md:text-4xl">
+						<h1 className="text-xl font-bold text-white md:text-3xl">
 							{title}
 						</h1>
 						<div className="flex  flex-col justify-center">
-							<p className="text-md text-neutral-50 md:text-xl xl:text-2xl">
+							<p className="text-md text-neutral-50 md:text-xl xl:text-xl">
 								{desc}
 							</p>
 							<div className="flex flex-row items-center gap-x-2 text-lg font-medium text-neutral-50/90 xl:text-xl">
@@ -80,42 +81,42 @@ function ProjectCards({title, desc, tech, techNames, role, url, obj, centered = 
 export default function Projects() {
 		return (
 			<section
-				className="mx-auto flex h-full flex-col items-center justify-center gap-y-10 pt-[4.75rem] lg:grid lg:w-[85%] lg:grid-cols-2 lg:gap-x-10 lg:pt-[8.75rem]"
+				className="mx-auto h-full w-[95%] flex flex-col items-center justify-center gap-y-10 pt-[4.75rem] lg:grid lg:w-[85%] lg:grid-cols-2 lg:gap-x-10 lg:pt-[8.75rem]"
 				id="work">
 				<ProjectCards
-					title="ElitLabs"
-					desc="An on-demand course platform for learning to code."
+					title="College Search"
+					desc="Simple, uncluttered university searching."
 					tech={[
-						<SiNextdotjs className="inline-block text-clip rounded-[200%] bg-white text-[#000000]" />,
-						<SiReact className="inline-block text-[#61DAFB]" />,
-						<SiTailwindcss className="inline-block text-[#06B6D4]" />,
+						<SiNextdotjs className="inline-block rounded-[200%] bg-white text-[#000000]" />,
+						<SiTypescript className="inline-block text-[#3178C6]" />,
+						<SiSqlite className='inline-block text-[#003B57]' />
 					]}
-					techNames={['Next.js', 'React', 'TailwindCSS']}
-					url="https://elitlabs.com"
-					obj={elitlabs}
+					techNames={['Next.js', 'Express.JS', 'SQL']}
+					url="https://college.underscore.wtf/"
+					obj={collegesearch}
 					white
 				/>
 				<ProjectCards
 					title="Homepage"
-					desc="A highly customizable new tab page with Spotify controls, countdowns, a settings menu, and an easy to use syncing system."
+					desc="A customizable new tab page with Spotify controls, countdowns, settings, and easy syncing."
 					tech={[
 						<SiReact className="inline-block text-[#61DAFB]" />,
 						<SiTailwindcss className="inline-block text-[#06B6D4]" />,
 						<SiSpotify className="inline-block text-[#1DB954]" />,
 					]}
 					techNames={['React', 'TailwindCSS', 'Spotify API']}
-					url="https://home.underscorelior.dev"
+					url="https://home.underscore.wtf"
 					obj={homepage}
 				/>
-								<ProjectCards
-					title="Quiz"
-					desc="A platform that allows for easy creation of web games, currently WIP."
+				<ProjectCards
+					title="Quiz Platform"
+					desc="A platform that allows for easy creation of web games."
 					tech={[
 						<SiNextdotjs className="inline-block rounded-[200%] bg-white text-[#000000]" />,
 						<SiTailwindcss className="inline-block text-[#06B6D4]" />,
 					]}
 					techNames={['Next.js', 'TailwindCSS']}
-					url="https://quiz.underscorelior.dev/"
+					url="https://quiz.underscore.wtf/"
 					obj={quiz}
 					white
 				/>
@@ -143,6 +144,19 @@ export default function Projects() {
 					obj={borderdle}
 				/>
 				<ProjectCards
+					title="ElitLabs"
+					desc="An on-demand course platform for learning to code."
+					tech={[
+						<SiNextdotjs className="inline-block text-clip rounded-[200%] bg-white text-[#000000]" />,
+						<SiReact className="inline-block text-[#61DAFB]" />,
+						<SiTailwindcss className="inline-block text-[#06B6D4]" />,
+					]}
+					techNames={['Next.js', 'React', 'TailwindCSS']}
+					url="https://elitlabs.com"
+					obj={elitlabs}
+					white
+				/>
+				{/* <ProjectCards
 					title="l0n3ly.com"
 					desc="A portfolio commissioned by loadingl0n3ly."
 					tech={[
@@ -152,7 +166,7 @@ export default function Projects() {
 					techNames={['React', 'TailwindCSS']}
 					url="https://l0n3ly-portfolio.vercel.app/"
 					obj={l0n3ly}
-				/>
+				/> */}
 				<ProjectCards
 					title="Polsu"
 					desc="A multi-purpose discord bot with hypixel stats."

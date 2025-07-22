@@ -32,7 +32,7 @@ export default function Footer() {
 							<SiGithub color="#181717" size={32} />
 						</a>	
 						<a
-							href="mailto:lior@underscore.wtf"
+							href="mailto:lior.pendler@gmail.com"
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="email">

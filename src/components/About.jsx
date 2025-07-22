@@ -27,49 +27,35 @@ export default function About() {
 					width={'full'}
 				/>
 				<p className="tracking col-start-3 self-center pt-4 text-2xl font-medium">
-					Hey! I'm Lior Pendler, a high school senior based in the United States. 
-					I love to work on projects and learn new technologies. I have
-					experience in many areas of development, including:
+					Hey! I'm Lior Pendler, a freshman at UC Irvine. I have experience across a wide range of development tools and languages, including:
 					<span className="ml-2 mr-3 inline-block">
-						<SiPython className="mr-1 inline-block text-2xl text-[#3776AB]" />{' '}
-						Python,{' '}
+						<SiPython className="mr-1 inline-block text-2xl text-[#3776AB]" /> Python,
 					</span>
 					<span className="mr-2 inline-block">
-						<SiJavascript className="inline-block text-2xl text-[#F7DF1E]" />{' '}
-						JavaScript,{' '}
+						<SiJavascript className="inline-block text-2xl text-[#F7DF1E]" /> JavaScript,
 					</span>
 					<span className="mr-2 inline-block">
-						<SiTypescript className="inline-block text-2xl text-[#3178C6]" />{' '}
-						TypeScript,{' '}
+						<SiTypescript className="inline-block text-2xl text-[#3178C6]" /> TypeScript,
 					</span>
 					<span className="mr-2 inline-block">
-						<FaJava className="inline-block text-2xl text-[#5382a1]" /> Java,{' '}
+						<FaJava className="inline-block text-2xl text-[#5382a1]" /> Java,
 					</span>
 					<span className="mr-2 inline-block">
-						<SiReact className="inline-block text-2xl text-[#61DAFB]" /> React,{' '}
+						<SiReact className="inline-block text-2xl text-[#61DAFB]" /> React,
 					</span>
 					<span className="mr-2 inline-block">
-						<SiNextdotjs className="inline-block text-2xl text-[#000000]" />{' '}
-						Next.js,{' '}
+						<SiNextdotjs className="inline-block text-2xl text-[#000000]" /> Next.js,
 					</span>
 					<span className="mr-2 inline-block">
-						<SiTailwindcss className="inline-block text-2xl text-[#38B2AC]" />{' '}
-						TailwindCSS,{' '}
+						<SiTailwindcss className="inline-block text-2xl text-[#38B2AC]" /> TailwindCSS,
 					</span>
 					<span className="inline-block">
-						<FaDatabase className="inline-block text-2xl text-neutral-700" />{' '}
-						SQL
+						<FaDatabase className="inline-block text-2xl text-neutral-700" /> SQL
 					</span>
-					, and more. I am currently working on a few projects, including{' '}
-					<a
-						href="https://elitlabs.com"
-						target="_blank"
-						className="text-slate-700 underline">
-						ElitLabs
-					</a>
-					, a nonprofit organization dedicated to delivering quality and
-					affordable programming classes for underserved students.
-				</p>
+					, and more. I love working on projects, especially those that challenge me to learn new skills and technologies, like{'	'}
+					<a href="https://college.underscore.wtf" target="_blank" className="text-slate-700 underline">
+						College Search
+					</a>, a tool I built to help students explore and compare colleges more effectively.</p>
 			</div>
 		</div>
 	);
