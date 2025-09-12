@@ -8,7 +8,7 @@ export default function Footer() {
 					<a
 						className="text-4xl font-bold text-neutral-800 md:text-3xl"
 						href="/#">
-						2024 Lior
+						{new Date().getFullYear()} Lior
 					</a>
 					<div className="mb-4 mt-6 flex flex-col gap-x-10 gap-y-4 text-xl font-medium text-neutral-800">
 						<h1 className="text-3xl font-semibold md:hidden">Pages</h1>
@@ -30,7 +30,7 @@ export default function Footer() {
 							rel="noopener noreferrer"
 							aria-label="github">
 							<SiGithub color="#181717" size={32} />
-						</a>	
+						</a>
 						<a
 							href="mailto:lior.pendler@gmail.com"
 							target="_blank"
