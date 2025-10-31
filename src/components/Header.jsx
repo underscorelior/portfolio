@@ -3,14 +3,14 @@ import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si';
 
 export default function Header() {
 	return (
-		<header className="relative mx-auto flex w-full justify-center pt-12 xl:pt-28 2xl:pb-[8.5%] 2xl:pt-[13.5rem] 3xl:pb-[10rem] 3xl:pt-[18rem] 4xl:pb-[15rem] ">
+		<header className="3xl:pb-[10rem] 3xl:pt-[18rem] 4xl:pb-[15rem] relative mx-auto flex w-full justify-center pt-12 xl:pt-28 2xl:pb-[8.5%] 2xl:pt-[13.5rem] ">
 			<div className="relative max-w-lg blur-xl lg:blur-3xl">
-				<div className="absolute -left-10 top-10 h-40 w-40 animate-blob rounded-full bg-fuchsia-400 mix-blend-multiply blur-xl filter sm:h-60 sm:w-60 lg:-left-20 lg:h-80 lg:w-80 lg:blur-3xl"></div>
-				<div className="animation-delay-2000 absolute left-32 top-0 h-40 w-40 animate-blob rounded-full bg-teal-300 mix-blend-multiply blur-xl filter sm:h-60 sm:w-60 lg:left-64 lg:h-80 lg:w-80 lg:blur-3xl"></div>
-				<div className="animation-delay-4000 absolute left-10 top-16 h-40 w-40 animate-blob rounded-full bg-lime-300 blur-xl filter sm:h-60 sm:w-60 lg:left-20 lg:top-32 lg:h-80 lg:w-80 lg:blur-3xl"></div>
+				<div className="animate-blob absolute -left-10 top-10 h-40 w-40 rounded-full bg-fuchsia-400 mix-blend-multiply blur-xl filter sm:h-60 sm:w-60 lg:-left-20 lg:h-80 lg:w-80 lg:blur-3xl"></div>
+				<div className="animation-delay-2000 animate-blob absolute left-32 top-0 h-40 w-40 rounded-full bg-teal-300 mix-blend-multiply blur-xl filter sm:h-60 sm:w-60 lg:left-64 lg:h-80 lg:w-80 lg:blur-3xl"></div>
+				<div className="animation-delay-4000 animate-blob absolute left-10 top-16 h-40 w-40 rounded-full bg-lime-300 blur-xl filter sm:h-60 sm:w-60 lg:left-20 lg:top-32 lg:h-80 lg:w-80 lg:blur-3xl"></div>
 			</div>
 			<section className="relative flex h-full w-full max-w-[85%] flex-col justify-center rounded-lg sm:max-w-[70%] lg:w-[81%] lg:max-w-[75%]">
-				<h1 className="text-center text-[2.5rem] font-semibold leading-[3.25rem] text-neutral-900 sm:text-5xl md:text-left md:text-6xl md:leading-[3.5rem] lg:w-[81%] lg:text-6xl lg:font-medium 3xl:w-[50%]">
+				<h1 className="3xl:w-[50%] text-center text-[2.5rem] font-semibold leading-[3.25rem] text-neutral-900 sm:text-5xl md:text-left md:text-6xl md:leading-[3.5rem] lg:w-[81%] lg:text-6xl lg:font-medium">
 					{header.subtitle}
 				</h1>
 				<div className="mt-4 flex w-full items-center">
@@ -18,10 +18,10 @@ export default function Header() {
 						{header.description}
 					</span>
 				</div>
-				<div className="mt-8 flex w-full flex-row items-center gap-x-6 gap-y-4 md:flex-row">
+				<div className="mt-8 flex w-full flex-col items-center gap-x-6 gap-y-4 md:flex-row">
 					<a
 						href="/#work"
-						className="flex w-full items-center justify-center rounded-xl border-2 bg-neutral-800 p-4 h-full px-8 text-center text-2xl font-semibold text-neutral-100 duration-300 hover:bg-neutral-900 md:max-w-[50%] md:p-[1.125rem] xl:max-w-[20%]">
+						className="flex h-full w-full items-center justify-center rounded-xl border-2 bg-neutral-800 p-4 px-8 text-center text-2xl font-semibold text-neutral-100 duration-300 hover:bg-neutral-900 md:max-w-[50%] md:p-[1.125rem] xl:max-w-[20%]">
 						View Work
 					</a>
 					<section className="flex w-full flex-row justify-between gap-x-4 md:justify-start md:gap-x-6">
@@ -39,7 +39,6 @@ export default function Header() {
 							rel="noopener noreferrer"
 							aria-label="email address"
 							className="w-auto rounded-xl border-2 bg-[#EA4335] p-[1rem] text-4xl text-white duration-300 hover:bg-[#d93729] md:p-[1.125rem] md:text-3xl">
-
 							<SiGmail />
 						</a>
 						<a

@@ -7,6 +7,7 @@ import {
 	SiSqlite,
 	SiTailwindcss,
 	SiTypescript,
+	SiPandas,
 } from 'react-icons/si';
 import elitlabs from '../assets/projects/elitlabs.webp';
 import homepage from '../assets/projects/homepage.webp';
@@ -14,7 +15,7 @@ import l0n3ly from '../assets/projects/l0n3ly.webp';
 import polsu from '../assets/projects/polsu.webp';
 import quiz from '../assets/projects/new_quiz.webp';
 import borderdle from '../assets/projects/borderdle.webp';
-import collegesearch from '../assets/projects/collegesearch.webp';
+import unisearch from '../assets/projects/unisearch.webp';
 
 function ProjectCards({
 	title,
@@ -91,16 +92,17 @@ export default function Projects() {
 			className="mx-auto flex h-full w-[95%] flex-col items-center justify-center gap-y-10 pt-[4.75rem] lg:grid lg:w-[85%] lg:grid-cols-2 lg:gap-x-10 lg:pt-[8.75rem]"
 			id="work">
 			<ProjectCards
-				title="College Search"
+				title="UniSearch"
 				desc="Simple, uncluttered university searching."
 				tech={[
 					<SiNextdotjs className="inline-block rounded-[200%] bg-white text-[#000000]" />,
 					<SiTypescript className="inline-block text-[#3178C6]" />,
 					<SiSqlite className="inline-block text-[#003B57]" />,
+					<SiPandas className="inline-block text-[#150458]" />,
 				]}
-				techNames={['Next.js', 'Express.JS', 'SQL']}
-				url="https://college.underscore.wtf/"
-				obj={collegesearch}
+				techNames={['Next.js', 'Express.JS', 'SQL', 'Pandas']}
+				url="https://unisearch.app/"
+				obj={unisearch}
 				white
 			/>
 			<ProjectCards
