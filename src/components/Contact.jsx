@@ -1,4 +1,4 @@
-import { SiDiscord } from 'react-icons/si';
+import { SiLinkedin } from 'react-icons/si';
 
 export default function Contact() {
 	return (
@@ -9,17 +9,17 @@ export default function Contact() {
 			<p className="tracking pt-4 text-2xl font-medium">
 				You can reach out to me at{' '}
 				<a
-					href="mailto:lior@underscore.wtf"
+					href="mailto:lior.pendler@gmail.com"
 					target="_blank"
 					className="text-slate-700 underline">
-					lior@underscore.wtf
+					lior.pendler@gmail.com
 				</a>
-				, or on{' '}
+				, or connect with me on{' '}
 				<a
-					href="https://discordapp.com/users/454356237614841870"
+					href='https://linkedin.com/in/liorpendler'
 					target="_blank"
-					className="text-slate-700 underline">
-					<SiDiscord className="inline-block text-2xl text-[#5865F2]" /> Discord (underscorelior)
+					className="text-slate-700">
+					<SiLinkedin className="inline-block text-2xl text-[#005E93]" /> <span className='underline'>LinkedIn</span>
 				</a>
 				.
 			</p>
